@@ -9,9 +9,9 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc5053.LakerRobot2019.commands;
+package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc5053.LakerRobot2019.Robot;
+import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 
 /**
  *

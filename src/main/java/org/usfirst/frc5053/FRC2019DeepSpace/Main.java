@@ -9,7 +9,7 @@
 // it from being updated in the future.
 
 
-package org.usfirst.frc5053.LakerRobot2019;
+package org.usfirst.frc5053.FRC2019DeepSpace;
 
 import edu.wpi.first.wpilibj.RobotBase;
 

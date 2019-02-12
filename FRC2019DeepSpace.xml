@@ -1,0 +1,68 @@
+<xml version="1.0">
+<dashboard>
+	<widget field="shoulderTestMidPosition: bottom" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="803" y="19"/>
+	</widget>
+	<widget field="shoulderTestMidPosition: mid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="816" y="59"/>
+	</widget>
+	<widget field="targetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="869" y="110"/>
+	</widget>
+	<widget field="Auto Selector" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="9" y="339"/>
+	</widget>
+	<widget field="shoulderCowboyDrive" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="27" y="131"/>
+	</widget>
+	<widget field="Autonomous Command" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="0" y="299"/>
+	</widget>
+	<widget field="driveTrainArcadeTeleOp" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="534" y="138"/>
+	</widget>
+	<widget field="driveTrain" type="Subsystem" class="edu.wpi.first.smartdashboard.gui.elements.Subsystem">
+		<location x="545" y="179"/>
+	</widget>
+	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="1" y="261"/>
+	</widget>
+	<widget field="shoulderLift" type="Subsystem" class="edu.wpi.first.smartdashboard.gui.elements.Subsystem">
+		<location x="36" y="175"/>
+	</widget>
+	<widget field="wristRotation" type="Subsystem" class="edu.wpi.first.smartdashboard.gui.elements.Subsystem">
+		<location x="305" y="179"/>
+	</widget>
+	<widget field="wristCowboyDrive" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="299" y="134"/>
+	</widget>
+	<widget field="ShoulderJoystickAxis(1): " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="8" y="11"/>
+	</widget>
+	<widget field="ShoulderSpeed: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="53" y="38"/>
+	</widget>
+	<widget field="ShoulderSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="31" y="68"/>
+	</widget>
+	<widget field="wristSpeed: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="316" y="40"/>
+	</widget>
+	<widget field="wristSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="294" y="99"/>
+	</widget>
+	<widget field="ShoulderSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="29" y="99"/>
+	</widget>
+	<widget field="wristSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="294" y="69"/>
+		<height>22</height>
+	</widget>
+	<widget field="wristJoystickAxis(0): " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="273" y="11"/>
+	</widget>
+</dashboard>
+<live-window>
+</live-window>
+	<hidden field="shoulderTestMidPosition"/>
+</xml>
