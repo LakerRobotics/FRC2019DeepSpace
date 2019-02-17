@@ -1,31 +1,121 @@
 <xml version="1.0">
 <dashboard>
-	<widget field="shoulderTestMidPosition: bottom" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="803" y="19"/>
+	<widget field="operateArm: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="933" y="471"/>
 	</widget>
-	<widget field="shoulderTestMidPosition: mid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="816" y="59"/>
+	<widget field="operateArm: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="684" y="480"/>
 	</widget>
-	<widget field="targetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="869" y="110"/>
+	<widget field="operateArm: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="685" y="533"/>
+	</widget>
+	<widget field="clawOperation: closeClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="438" y="532"/>
+	</widget>
+	<widget field="clawOperation: openClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="437" y="501"/>
+	</widget>
+	<widget field="operateArm: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="673" y="431"/>
+	</widget>
+	<widget field="operateArm: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="688" y="505"/>
+	</widget>
+	<widget field="operateArm: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="718" y="455"/>
+	</widget>
+	<widget field="operateArm: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="935" y="525"/>
+	</widget>
+	<widget field="operateArm: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="964" y="440"/>
+	</widget>
+	<widget field="operateArm: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="938" y="500"/>
+	</widget>
+	<widget field="wristTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="281" y="213"/>
+	</widget>
+	<widget field="shoulderTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="20" y="212"/>
+	</widget>
+	<widget field="wristAutoPosition: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="997" y="301"/>
+	</widget>
+	<widget field="wristAutoPosition: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="297" y="297"/>
+	</widget>
+	<widget field="intakeOut" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="308" y="533"/>
+	</widget>
+	<widget field="shoulderAutoPosition: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="11" y="403"/>
+	</widget>
+	<widget field="wristAutoPosition: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="289" y="357"/>
+	</widget>
+	<widget field="wristAutoPosition: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="299" y="396"/>
+	</widget>
+	<widget field="wristAutoPosition: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1007" y="208"/>
+	</widget>
+	<widget field="wristAutoPosition: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1006" y="327"/>
+	</widget>
+	<widget field="shoulderAutoPosition: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="7" y="366"/>
+	</widget>
+	<widget field="shoulderAutoPosition: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="948" y="18"/>
+	</widget>
+	<widget field="wristAutoPosition: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="998" y="165"/>
+	</widget>
+	<widget field="shoulderAutoPosition: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="18" y="447"/>
+	</widget>
+	<widget field="shoulderAutoPosition: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="16" y="323"/>
+	</widget>
+	<widget field="intakeIn" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="314" y="505"/>
+	</widget>
+	<widget field="wristAutoPosition: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="308" y="322"/>
+	</widget>
+	<widget field="wristAutoPosition: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1001" y="250"/>
+	</widget>
+	<widget field="shoulderAutoPosition: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="708" y="144"/>
+	</widget>
+	<widget field="shoulderAutoPosition: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="966" y="85"/>
+	</widget>
+	<widget field="shoulderAutoPosition: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="659" y="108"/>
+	</widget>
+	<widget field="shoulderAutoPosition: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="957" y="56"/>
 	</widget>
 	<widget field="Auto Selector" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="9" y="339"/>
+		<location x="501" y="243"/>
 	</widget>
 	<widget field="shoulderCowboyDrive" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
 		<location x="27" y="131"/>
 	</widget>
 	<widget field="Autonomous Command" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="0" y="299"/>
+		<location x="496" y="203"/>
 	</widget>
 	<widget field="driveTrainArcadeTeleOp" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="534" y="138"/>
+		<location x="498" y="11"/>
 	</widget>
 	<widget field="driveTrain" type="Subsystem" class="edu.wpi.first.smartdashboard.gui.elements.Subsystem">
-		<location x="545" y="179"/>
+		<location x="503" y="51"/>
 	</widget>
 	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
-		<location x="1" y="261"/>
+		<location x="488" y="164"/>
 	</widget>
 	<widget field="shoulderLift" type="Subsystem" class="edu.wpi.first.smartdashboard.gui.elements.Subsystem">
 		<location x="36" y="175"/>
@@ -63,6 +153,66 @@
 	</widget>
 </dashboard>
 <live-window>
+	<widget field="claw" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="clawSolenoid" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
+			<location x="6" y="16"/>
+			<height>20</height>
+			<width>142</width>
+		</widget>
+		<location x="0" y="115"/>
+		<width>154</width>
+		<height>42</height>
+	</widget>
+	<widget field="intake" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="intakeRightVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="16"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<widget field="intakeLeftVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="61"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<location x="0" y="92"/>
+		<width>309</width>
+		<height>112</height>
+	</widget>
+	<widget field="Ungrouped" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="Talon SRX [2]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="16"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<widget field="Talon SRX [1]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="61"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<location x="0" y="69"/>
+		<width>309</width>
+		<height>112</height>
+	</widget>
+	<widget field="driveTrain" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="leftTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="16"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<widget field="rightTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="61"/>
+			<height>45</height>
+			<width>297</width>
+		</widget>
+		<location x="0" y="46"/>
+		<width>309</width>
+		<height>112</height>
+	</widget>
+	<widget field="shoulderLift" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="0" y="23"/>
+	</widget>
+	<widget field="wristRotation" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="0" y="0"/>
+	</widget>
 </live-window>
-	<hidden field="shoulderTestMidPosition"/>
 </xml>

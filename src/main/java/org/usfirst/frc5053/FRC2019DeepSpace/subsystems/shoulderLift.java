@@ -56,34 +56,38 @@ public class shoulderLift extends Subsystem {
 	final int kTimeoutMs = 30;
 	boolean kSensorPhase = false;
     boolean kMotorInvert = false;
-    final double kP = 0.15;
+    final double kP = 8.0; // SNW 16.0 was good, except it started oscillating at the rocket high
 	final double kI = 0.0;
-	final double kD = 1.0;
+	final double kD = 0.0;
 	final double kF = 0.0;
 	final int kIzone = 0;
 	final double kPeakOutput = 1.0;
     
-    /* Config the sensor used for Primary PID and sensor direction */
-//    shoulderTalonSRX.setInverted(kMotorInvert);
+    /* Config the sensor used for Primary PID and sensor direction */ 
+    shoulderTalonSRX.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative, 
+                                                  kPIDLoopIdx,
+				                                  kTimeoutMs);
+
+    shoulderTalonSRX.setInverted(kMotorInvert);
 
     /* Config the peak and nominal outputs, 12V means full */
-//    shoulderTalonSRX.configNominalOutputForward(0, kTimeoutMs);
-//    shoulderTalonSRX.configNominalOutputReverse(0, kTimeoutMs);
-//    shoulderTalonSRX.configPeakOutputForward(1, kTimeoutMs);
-//    shoulderTalonSRX.configPeakOutputReverse(-1, kTimeoutMs);
+    shoulderTalonSRX.configNominalOutputForward(0, kTimeoutMs);
+    shoulderTalonSRX.configNominalOutputReverse(0, kTimeoutMs);
+    shoulderTalonSRX.configPeakOutputForward(1, kTimeoutMs);
+    shoulderTalonSRX.configPeakOutputReverse(-1, kTimeoutMs);
 
     /**
     * Config the allowable closed-loop error, Closed-Loop output will be
     * neutral within this range. See Table in Section 17.2.1 for native
     * units per rotation.
     */
-//    shoulderTalonSRX.configAllowableClosedloopError(0, kPIDLoopIdx, kTimeoutMs);
+    shoulderTalonSRX.configAllowableClosedloopError(0, kPIDLoopIdx, kTimeoutMs);
 
     /* Config Position Closed Loop gains in slot0, tsypically kF stays zero. */
- //   shoulderTalonSRX.config_kF(kPIDLoopIdx, kF, kTimeoutMs);
- //   shoulderTalonSRX.config_kP(kPIDLoopIdx, kP, kTimeoutMs);
- //   shoulderTalonSRX.config_kI(kPIDLoopIdx, kI, kTimeoutMs);
- //   shoulderTalonSRX.config_kD(kPIDLoopIdx, kD, kTimeoutMs);
+   shoulderTalonSRX.config_kF(kPIDLoopIdx, kF, kTimeoutMs);
+   shoulderTalonSRX.config_kP(kPIDLoopIdx, kP, kTimeoutMs);
+   shoulderTalonSRX.config_kI(kPIDLoopIdx, kI, kTimeoutMs);
+   shoulderTalonSRX.config_kD(kPIDLoopIdx, kD, kTimeoutMs);
 
     /**
     * Grab the 360 degree position of the MagEncoder's absolute
@@ -165,8 +169,9 @@ public class shoulderLift extends Subsystem {
 
     public void startMoveToPosition(double targetPosition){
       
+        
         shoulderTalonSRX.set(ControlMode.Position, targetPosition);
-        SmartDashboard.putNumber("targetPosition", shoulderTalonSRX.getClosedLoopTarget(0));
+        SmartDashboard.putNumber("shoulderTargetPosition", shoulderTalonSRX.getClosedLoopTarget(0));
     }
     
     

@@ -1,0 +1,103 @@
+<xml version="1.0">
+<dashboard>
+	<widget field="operateArm: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1032" y="251"/>
+	</widget>
+	<widget field="operateArm: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="692" y="246"/>
+	</widget>
+	<widget field="operateArm: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="692" y="360"/>
+	</widget>
+	<widget field="clawOperation: closeClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1052" y="64"/>
+	</widget>
+	<widget field="clawOperation: openClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="679" y="63"/>
+	</widget>
+	<widget field="operateArm: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="685" y="129"/>
+	</widget>
+	<widget field="operateArm: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="695" y="301"/>
+	</widget>
+	<widget field="operateArm: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="726" y="182"/>
+	</widget>
+	<widget field="operateArm: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1028" y="358"/>
+	</widget>
+	<widget field="operateArm: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1052" y="127"/>
+	</widget>
+	<widget field="operateArm: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1034" y="300"/>
+	</widget>
+	<widget field="wristTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1009" y="510"/>
+	</widget>
+	<widget field="shoulderTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="698" y="508"/>
+	</widget>
+	<widget field="intakeOut" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="849" y="18"/>
+	</widget>
+	<widget field="intakeIn" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="677" y="16"/>
+	</widget>
+	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="488" y="164"/>
+	</widget>
+	<widget field="ShoulderSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="695" y="436"/>
+	</widget>
+	<widget field="wristSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1019" y="473"/>
+	</widget>
+	<widget field="ShoulderSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="697" y="470"/>
+	</widget>
+	<widget field="wristSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1024" y="436"/>
+		<height>22</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
+		<location x="0" y="0"/>
+		<width>654</width>
+		<height>622</height>
+		<property name="Camera Choice" value=""/>
+	</static-widget>
+</dashboard>
+<live-window>
+</live-window>
+	<hidden field="wristAutoPosition: hatchRocketMid"/>
+	<hidden field="wristAutoPosition: hatchShip"/>
+	<hidden field="shoulderAutoPosition: cargoRocketLow"/>
+	<hidden field="shoulderAutoPosition: hatchHumanPlayer"/>
+	<hidden field="driveTrain"/>
+	<hidden field="shoulderLift"/>
+	<hidden field="wristSpeed: "/>
+	<hidden field="driveTrainArcadeTeleOp"/>
+	<hidden field="wristAutoPosition: cargoRocketLow"/>
+	<hidden field="wristAutoPosition: hatchRocketLow"/>
+	<hidden field="shoulderAutoPosition: hatchRocketHigh"/>
+	<hidden field="wristAutoPosition: cargoRocketHigh"/>
+	<hidden field="shoulderAutoPosition: hatchRocketLow"/>
+	<hidden field="wristAutoPosition: cargoShip"/>
+	<hidden field="wristAutoPosition: hatchRocketHigh"/>
+	<hidden field="shoulderAutoPosition: cargoShip"/>
+	<hidden field="wristAutoPosition: hatchHumanPlayer"/>
+	<hidden field="wristCowboyDrive"/>
+	<hidden field="wristAutoPosition: cargoRocketMid"/>
+	<hidden field="shoulderAutoPosition: cargoRocketHigh"/>
+	<hidden field="shoulderAutoPosition: hatchRocketMid"/>
+	<hidden field="ShoulderJoystickAxis(1): "/>
+	<hidden field="wristJoystickAxis(0): "/>
+	<hidden field="shoulderAutoPosition: hatchShip"/>
+	<hidden field="wristRotation"/>
+	<hidden field="Auto Selector"/>
+	<hidden field="ShoulderSpeed: "/>
+	<hidden field="shoulderAutoPosition: cargoRocketMid"/>
+	<hidden field="shoulderCowboyDrive"/>
+	<hidden field="Autonomous Command"/>
+</xml>

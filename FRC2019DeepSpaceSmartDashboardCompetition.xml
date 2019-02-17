@@ -1,0 +1,80 @@
+<xml version="1.0">
+<dashboard>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
+		<location x="0" y="0"/>
+		<width>654</width>
+		<height>622</height>
+		<property name="Camera Choice" value=""/>
+	</static-widget>
+	<widget field="operateArm: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1009" y="311"/>
+	</widget>
+	<widget field="operateArm: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="684" y="324"/>
+	</widget>
+	<widget field="operateArm: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="688" y="413"/>
+	</widget>
+	<widget field="clawOperation: closeClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1057" y="44"/>
+	</widget>
+	<widget field="clawOperation: openClaw" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="681" y="50"/>
+	</widget>
+	<widget field="operateArm: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="666" y="207"/>
+	</widget>
+	<widget field="operateArm: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="688" y="369"/>
+	</widget>
+	<widget field="operateArm: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1034" y="199"/>
+	</widget>
+	<widget field="operateArm: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1016" y="403"/>
+	</widget>
+	<widget field="operateArm: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1036" y="158"/>
+	</widget>
+	<widget field="operateArm: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1015" y="356"/>
+	</widget>
+	<widget field="intakeOut" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="1135" y="8"/>
+	</widget>
+	<widget field="intakeIn" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
+		<location x="768" y="8"/>
+	</widget>
+	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="488" y="164"/>
+	</widget>
+	<widget field="wristTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1040" y="556"/>
+	</widget>
+	<widget field="shoulderTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="700" y="552"/>
+	</widget>
+	<widget field="ShoulderSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="704" y="476"/>
+		<height>22</height>
+	</widget>
+	<widget field="wristSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1053" y="522"/>
+	</widget>
+	<widget field="ShoulderSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="709" y="517"/>
+	</widget>
+	<widget field="wristSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="1054" y="481"/>
+		<height>22</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
+		<location x="0" y="0"/>
+		<width>654</width>
+		<height>622</height>
+		<property name="Camera Choice" value=""/>
+	</static-widget>
+</dashboard>
+<live-window>
+</live-window>
+</xml>
