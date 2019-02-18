@@ -87,7 +87,6 @@ public void closeClaw(){
     clawSolenoid.set(Value.kReverse);
 }
 public void ejectClaw(){
-    openClaw();
     clawPunchSolenoid.set(true);
 }
 public void retractClaw(){
