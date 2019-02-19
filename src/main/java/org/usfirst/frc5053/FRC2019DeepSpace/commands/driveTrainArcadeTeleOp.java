@@ -11,6 +11,7 @@
 
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 
@@ -52,6 +53,17 @@ public class driveTrainArcadeTeleOp extends Command {
         // 20190205 Modified the rotate stick to feed a negative value -- the
         //          direction of the physical turn was reverse of our
         //          desired direction
+        
+        /***********************
+         * 20190218
+         * Rumble the joystick if we are too close to something
+         ***********************/
+        // TODO: Add distance checking here
+        // TODO:      See what values we receive
+        // TODO:      Determine our tolerance
+        // TODO:      Determine what changing the value does
+        Robot.oi.xbox360.setRumble(RumbleType.kLeftRumble, 1);
+
         Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)*.8,
                                 -Robot.oi.xbox360.getRawAxis(4)*.8);               
     }
