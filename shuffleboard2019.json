@@ -1,0 +1,259 @@
+{
+  "tabPane": [
+    {
+      "title": "OPERATOR",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "CARGO",
+              "Layout/Number of columns": 3,
+              "Layout/Number of rows": 4,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Ground Pickup",
+                  "_title": "Ground Pickup"
+                },
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Human Player",
+                  "_title": "Human Player"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Cargo Ship",
+                  "_title": "Cargo Ship"
+                },
+                "2,3": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket Low",
+                  "_title": "Rocket Low"
+                },
+                "2,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket Middle",
+                  "_title": "Rocket Middle"
+                },
+                "2,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket High",
+                  "_title": "Rocket High"
+                },
+                "2,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket High Rear",
+                  "_title": "Rocket High Rear"
+                }
+              }
+            }
+          },
+          "3,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "HATCH",
+              "Layout/Number of columns": 3,
+              "Layout/Number of rows": 4,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Transport",
+                  "_title": "Transport"
+                },
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Human Player",
+                  "_title": "Human Player"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Cargo Ship",
+                  "_title": "Cargo Ship"
+                },
+                "2,3": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Low",
+                  "_title": "Rocket Low"
+                },
+                "2,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket High",
+                  "_title": "Rocket High"
+                },
+                "2,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Middle",
+                  "_title": "Rocket Middle"
+                }
+              }
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "INTAKE",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 2,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeIn",
+                  "_title": "IN"
+                },
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeOut",
+                  "_title": "OUT"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftUpTimed: default",
+                  "_title": "UP"
+                },
+                "1,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftDownTimed: default",
+                  "_title": "DOWN"
+                }
+              }
+            }
+          },
+          "6,2": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "CLAW",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 1,
+              "Layout/Label position": "BOTTOM",
+              "_children": {}
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "DEBUG",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              1,
+              2
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "SHOULDER",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/shoulderTargetPosition",
+                  "_title": "TARGET"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/ShoulderSensorAbs: ",
+                  "_title": "ABSOLUTE"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/ShoulderSensorPos: ",
+                  "_title": "RELATIVE"
+                }
+              ]
+            }
+          },
+          "1,0": {
+            "size": [
+              1,
+              2
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "WRIST",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristTargetPosition",
+                  "_title": "TARGET"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristSensorAbs: ",
+                  "_title": "ABSOLUTE"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristSensorPos: ",
+                  "_title": "RELATIVE"
+                }
+              ]
+            }
+          },
+          "2,0": {
+            "size": [
+              1,
+              2
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "DISTANCE",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/rightUltrasonic",
+                  "_title": "RIGHT"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/leftUltrasonic",
+                  "_title": "LEFT"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "windowGeometry": {
+    "x": -7.333333492279053,
+    "y": -7.333333492279053,
+    "width": 1294.6666259765625,
+    "height": 694.6666870117188
+  }
+}

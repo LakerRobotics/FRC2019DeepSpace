@@ -54,11 +54,11 @@ public class Robot extends TimedRobot {
      * Create a static variable to store the last pressed button on the
      * LabView customized dashboard.
      **********************************/
-    public static final int INITIAL_AND_ERROR_BUTTON = 9999;
+/*    public static final int INITIAL_AND_ERROR_BUTTON = 9999;
     public static final int UNPROGRAMMED_ARM_PARAMETER = 0;
     public static final int ARM_PARAMETERS_SHOULDER_INDEX = 0;
-    public static final int ARM_PARAMETERS_WRIST_INDEX = 0;
-    public static final int ARM_PARAMETERS_DISTANCE_INDEX = 0;
+    public static final int ARM_PARAMETERS_WRIST_INDEX = 1;
+    public static final int ARM_PARAMETERS_DISTANCE_INDEX = 2;
 
     public static int lastDashboardButton = INITIAL_AND_ERROR_BUTTON;      // No Button Pressed
     /**********************************
@@ -73,26 +73,28 @@ public class Robot extends TimedRobot {
      *       Allowing cowboy on one or both?
      * 
      */
-    public double[][] operateArmParameters =
+/*    public double[][] operateArmParameters =
     {
-        {},
-        {671, 2421, 0},             // Cargo ==> Rocket High
-//        {1422, 2239, 0},            // Cargo ==> Rocket Middle
-        {1321, 2239, 0},            // Cargo ==> Rocket Middle
-//        {2197, 1749, 0},            // Cargo ==> Rocket Low
-        {2096, 1749, 0},            // Cargo ==> Rocket Low
-        {537, 2864, 0},             // Hatch ==> Rocket High
-        {1607, 2166, 0},            // Hatch ==> Rocket Middle
-        {2605, 1341, 0},            // Hatch ==> Rocket Low
-        {2605, 1341, 0},            // Hatch ==> Feeder (Human Player)
-        {2605, 1341, 0},            // Hatch ==> Cargo Ship
-//        {1796, 2026, 0},            // Cargo ==> Cargo Ship
-        {1632, 2321, 0},            // Cargo ==> Cargo Ship
-        {2837, 1447, 0},            // Cargo ==> Ground Pickup
-        {1738, 2048, 0},            // Cargo ==> Feeder (Human Player)
-        {106, 1710, 0},             // Cargo ==> Rocket High (from back of Robot)
-        {}                          // Hatch ==> Transport Position
-    };
+        {0, 0, 0},                  // 0: Not Used
+        {671, 2421, 0},             // 1: Cargo ==> Rocket High
+        {1321, 2239, 0},            // 2: Cargo ==> Rocket Middle
+        {2096, 1749, 0},            // 3: Cargo ==> Rocket Low
+        {537, 2864, 0},             // 4: Hatch ==> Rocket High
+        {1607, 2166, 0},            // 5: Hatch ==> Rocket Middle
+        {2605, 1341, 0},            // 6: Hatch ==> Rocket Low
+        {2605, 1341, 0},            // 7: Hatch ==> Cargo Ship
+        {1632, 2321, 0},            // 8: Cargo ==> Cargo Ship
+        {2605, 1341, 0},            // 9: Hatch ==> Feeder (Human Player)
+        {1738, 2048, 0},            // 10: Cargo ==> Feeder (Human Player)
+        {2931,580,0},               // 11: Hatch ==> Transport Position
+        {2837, 1447, 0},            // 12: Cargo ==> Ground Pickup
+        {106, 1710, 0}              // 13: Cargo ==> Rocket High (from back of Robot)
+/************** */
+//        {1422, 2239, 0},            // 2: Cargo ==> Rocket Middle
+//        {2197, 1749, 0},            // 3: Cargo ==> Rocket Low
+//        {1796, 2026, 0},            // 9: Cargo ==> Cargo Ship
+// };
+
 
     //UsbCamera camera1;
     //camera1=
@@ -181,7 +183,7 @@ public class Robot extends TimedRobot {
       * Act on the function requested by the operator from the LabView customized
       * Dashboard
       *****************************/
-        double inputFromLabViewDashBoard = INITIAL_AND_ERROR_BUTTON;
+    /*    double inputFromLabViewDashBoard = INITIAL_AND_ERROR_BUTTON;
         int convertedInputFromLabViewDashBoard = INITIAL_AND_ERROR_BUTTON;
         Command commandToExecute;
 
@@ -189,12 +191,10 @@ public class Robot extends TimedRobot {
             inputFromLabViewDashBoard = SmartDashboard.getNumber("armHeightEnum", INITIAL_AND_ERROR_BUTTON);
         } 
         catch (Exception e) {
-            System.out.println(e.getMessage());
             inputFromLabViewDashBoard = INITIAL_AND_ERROR_BUTTON;
         }
 
         convertedInputFromLabViewDashBoard = (int) inputFromLabViewDashBoard;
-
         if ((convertedInputFromLabViewDashBoard == lastDashboardButton) ||
             (convertedInputFromLabViewDashBoard == INITIAL_AND_ERROR_BUTTON) ||
             (convertedInputFromLabViewDashBoard == UNPROGRAMMED_ARM_PARAMETER ))
@@ -205,11 +205,13 @@ public class Robot extends TimedRobot {
         {
             // Act on the new request
             // TODO : Do I need to Cancel any Prior request?
-            commandToExecute = new operateArm(operateArmParameters[ARM_PARAMETERS_SHOULDER_INDEX][convertedInputFromLabViewDashBoard],
-                                              operateArmParameters[ARM_PARAMETERS_WRIST_INDEX][convertedInputFromLabViewDashBoard]);
+            commandToExecute = new operateArm(operateArmParameters[convertedInputFromLabViewDashBoard][ARM_PARAMETERS_SHOULDER_INDEX],
+                                              operateArmParameters[convertedInputFromLabViewDashBoard][ARM_PARAMETERS_WRIST_INDEX]);
+            System.out.println("Create Command");
             commandToExecute.start();
             lastDashboardButton = convertedInputFromLabViewDashBoard;
-        }
+        } 
+        */
         /*****************************/
 
         Scheduler.getInstance().run();

@@ -61,7 +61,7 @@ public class shoulderLift extends Subsystem {
 	final double kD = 0.0;
 	final double kF = 0.0;
 	final int kIzone = 0;
-	final double kPeakOutput = 1.0;
+    final double kPeakOutput = 1.0;
     
     /* Config the sensor used for Primary PID and sensor direction */ 
     shoulderTalonSRX.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative, 
@@ -101,6 +101,7 @@ public class shoulderLift extends Subsystem {
     if (kMotorInvert) { absolutePosition *= -1; }
 
     /* Set the quadrature (relative) sensor to match absolute */
+    System.out.println("Set Realative to Absolute");
     shoulderTalonSRX.setSelectedSensorPosition(absolutePosition, kPIDLoopIdx, kTimeoutMs);
 
 }

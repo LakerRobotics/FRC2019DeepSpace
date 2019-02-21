@@ -1,222 +1,55 @@
 <xml version="1.0">
 <dashboard>
-	<widget field="intakeLiftDownTimed: default" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1007" y="51"/>
-	</widget>
-	<widget field="intakeLiftUpTimed: default" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1022" y="15"/>
-	</widget>
-	<widget field="leftUltrasonic" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="746" y="588"/>
-	</widget>
-	<widget field="rightUltrasonic" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="1054" y="594"/>
-	</widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
-		<location x="6" y="2"/>
-		<width>654</width>
-		<height>622</height>
+		<location x="46" y="3"/>
+		<width>866</width>
+		<height>612</height>
 		<property name="Camera Choice" value=""/>
 	</static-widget>
-	<widget field="operateArm: cargoRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1016" y="283"/>
-	</widget>
-	<widget field="operateArm: hatchRocketLow" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="685" y="288"/>
-	</widget>
-	<widget field="operateArm: hatchRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="687" y="363"/>
-	</widget>
-	<widget field="operateArm: hatchHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="674" y="167"/>
-	</widget>
-	<widget field="operateArm: hatchRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="689" y="328"/>
-	</widget>
-	<widget field="operateArm: hatchShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="720" y="227"/>
-	</widget>
-	<widget field="operateArm: cargoRocketHigh" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1011" y="363"/>
-	</widget>
-	<widget field="operateArm: cargoShip" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1043" y="227"/>
-	</widget>
-	<widget field="operateArm: cargoRocketMid" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="1015" y="320"/>
-	</widget>
-	<widget field="intakeOut" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="696" y="53"/>
-	</widget>
-	<widget field="intakeIn" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="705" y="18"/>
-	</widget>
 	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
 		<location x="488" y="164"/>
 	</widget>
-	<widget field="wristTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="1040" y="556"/>
-	</widget>
-	<widget field="shoulderTargetPosition" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="700" y="552"/>
-	</widget>
-	<widget field="ShoulderSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="704" y="476"/>
-		<height>22</height>
-	</widget>
-	<widget field="wristSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="1053" y="522"/>
-	</widget>
-	<widget field="ShoulderSensorPos: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="709" y="517"/>
-	</widget>
-	<widget field="wristSensorAbs: " type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
-		<location x="1054" y="481"/>
-		<height>22</height>
-	</widget>
-	<widget field="operateArm: cargoRocketHighBack" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="983" y="410"/>
-	</widget>
-	<widget field="operateArm: cargoHumanPlayer" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="997" y="165"/>
-	</widget>
-	<widget field="operateArm: cargoGroundPickup" type="Command" class="edu.wpi.first.smartdashboard.gui.elements.Command">
-		<location x="994" y="121"/>
-	</widget>
 </dashboard>
 <live-window>
-	<widget field="distanceControl" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<widget field="leftUltrasonic" type="Ultrasonic" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
-			<location x="6" y="16"/>
-			<height>20</height>
-			<width>92</width>
-		</widget>
-		<widget field="rightUltrasonic" type="Ultrasonic" class="edu.wpi.first.smartdashboard.livewindow.elements.SingleNumberDisplay">
-			<location x="6" y="36"/>
-			<height>20</height>
-			<width>92</width>
-		</widget>
-		<location x="0" y="226"/>
-		<width>104</width>
-		<height>62</height>
-	</widget>
-	<widget field="shoulderLift" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<location x="0" y="203"/>
-	</widget>
-	<widget field="wristRotation" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<location x="0" y="43"/>
-	</widget>
-	<widget field="intake" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<widget field="intakeLeftVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="intakeLeftVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="intakeRightVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="intakeRightVictorSP" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="intakeLiftSolenoid" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="intakeLiftSolenoid" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<location x="0" y="115"/>
-		<width>309</width>
-		<height>87</height>
-	</widget>
-	<widget field="claw" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<widget field="clawPunchSolenoid" type="Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalOutputController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="clawPunchSolenoid" type="Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.DigitalOutputController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="clawSolenoid" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="clawSolenoid" type="Double Solenoid" class="edu.wpi.first.smartdashboard.livewindow.elements.RelayController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<location x="0" y="0"/>
-		<width>154</width>
-		<height>42</height>
-	</widget>
-	<widget field="driveTrain" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<widget field="leftTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="leftTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="rightTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="rightTalon" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<location x="0" y="69"/>
-		<width>309</width>
-		<height>67</height>
-	</widget>
-	<widget field="Ungrouped" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
-		<widget field="Talon SRX [2]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="Talon SRX [2]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="Talon SRX [1]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<widget field="Talon SRX [1]" type="Speed Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
-			<location x="0" y="0"/>
-			<height>0</height>
-			<width>0</width>
-		</widget>
-		<location x="0" y="92"/>
-		<width>309</width>
-		<height>67</height>
-	</widget>
 </live-window>
-	<hidden field="intakeLift: intakeLiftUp"/>
-	<hidden field="intakeLift: intakeLiftDown"/>
+	<hidden field="CARGO : Ground Pickup"/>
+	<hidden field="intakeLiftDownTimed: default"/>
+	<hidden field="HATCH : Rocket High"/>
+	<hidden field="armHeightEnum"/>
+	<hidden field="shoulderTargetPosition"/>
+	<hidden field="HATCH : Rocket Middle"/>
+	<hidden field="operateArm: cargoShip"/>
+	<hidden field="wristSensorAbs: "/>
+	<hidden field="HATCH : Human Player"/>
+	<hidden field="CARGO : Rocket High Rear"/>
+	<hidden field="operateArm: cargoHumanPlayer"/>
+	<hidden field="operateArm: hatchRocketHigh"/>
+	<hidden field="operateArm: cargoRocketMid"/>
+	<hidden field="operateArm: cargoRocketHigh"/>
+	<hidden field="intakeLiftUpTimed: default"/>
+	<hidden field="operateArm: cargoRocketHighBack"/>
+	<hidden field="armHeightEnum3"/>
+	<hidden field="operateArm: hatchShip"/>
+	<hidden field="operateArm: hatchHumanPlayer"/>
+	<hidden field="operateArm: cargoRocketLow"/>
+	<hidden field="CARGO : Cargo Ship"/>
+	<hidden field="CARGO : Rocket High"/>
+	<hidden field="HATCH : Cargo Ship"/>
+	<hidden field="CARGO : Rocket Low"/>
+	<hidden field="Auto Selector"/>
+	<hidden field="leftUltrasonic"/>
+	<hidden field="wristSensorPos: "/>
+	<hidden field="operateArm: hatchRocketMid"/>
+	<hidden field="rightUltrasonic"/>
+	<hidden field="wristTargetPosition"/>
+	<hidden field="intakeIn"/>
+	<hidden field="HATCH : Rocket Low"/>
+	<hidden field="ShoulderSensorPos: "/>
+	<hidden field="CARGO : Rocket Middle"/>
+	<hidden field="operateArm: cargoGroundPickup"/>
+	<hidden field="intakeOut"/>
+	<hidden field="operateArm: hatchRocketLow"/>
+	<hidden field="ShoulderSensorAbs: "/>
+	<hidden field="HATCH : Transport"/>
+	<hidden field="CARGO : Human Player"/>
 </xml>
