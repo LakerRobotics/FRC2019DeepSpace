@@ -1,9 +1,19 @@
 <xml version="1.0">
 <dashboard>
+	<widget field="leftUltrasonic" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="914" y="209"/>
+		<width>221</width>
+		<height>107</height>
+	</widget>
+	<widget field="rightUltrasonic" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="915" y="73"/>
+		<width>213</width>
+		<height>94</height>
+	</widget>
 	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
-		<location x="46" y="3"/>
-		<width>866</width>
-		<height>612</height>
+		<location x="7" y="2"/>
+		<width>893</width>
+		<height>628</height>
 		<property name="Camera Choice" value=""/>
 	</static-widget>
 	<widget field="Auto mode" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
@@ -13,43 +23,34 @@
 <live-window>
 </live-window>
 	<hidden field="CARGO : Ground Pickup"/>
+	<hidden field="shoulderSynced"/>
 	<hidden field="intakeLiftDownTimed: default"/>
 	<hidden field="HATCH : Rocket High"/>
-	<hidden field="armHeightEnum"/>
 	<hidden field="shoulderTargetPosition"/>
 	<hidden field="HATCH : Rocket Middle"/>
-	<hidden field="operateArm: cargoShip"/>
 	<hidden field="wristSensorAbs: "/>
-	<hidden field="HATCH : Human Player"/>
 	<hidden field="CARGO : Rocket High Rear"/>
-	<hidden field="operateArm: cargoHumanPlayer"/>
-	<hidden field="operateArm: hatchRocketHigh"/>
-	<hidden field="operateArm: cargoRocketMid"/>
-	<hidden field="operateArm: cargoRocketHigh"/>
+	<hidden field="HATCH : Human Player"/>
+	<hidden field="clawOperationTimedClose"/>
 	<hidden field="intakeLiftUpTimed: default"/>
-	<hidden field="operateArm: cargoRocketHighBack"/>
-	<hidden field="armHeightEnum3"/>
-	<hidden field="operateArm: hatchShip"/>
-	<hidden field="operateArm: hatchHumanPlayer"/>
-	<hidden field="operateArm: cargoRocketLow"/>
+	<hidden field="wristCurrent"/>
+	<hidden field="wristSynced"/>
 	<hidden field="CARGO : Cargo Ship"/>
 	<hidden field="CARGO : Rocket High"/>
 	<hidden field="HATCH : Cargo Ship"/>
 	<hidden field="CARGO : Rocket Low"/>
-	<hidden field="Auto Selector"/>
-	<hidden field="leftUltrasonic"/>
+	<hidden field="DEBUG1"/>
+	<hidden field="DEBUG"/>
 	<hidden field="wristSensorPos: "/>
-	<hidden field="operateArm: hatchRocketMid"/>
-	<hidden field="rightUltrasonic"/>
 	<hidden field="wristTargetPosition"/>
 	<hidden field="intakeIn"/>
 	<hidden field="HATCH : Rocket Low"/>
+	<hidden field="shoulderCurrent"/>
 	<hidden field="ShoulderSensorPos: "/>
 	<hidden field="CARGO : Rocket Middle"/>
-	<hidden field="operateArm: cargoGroundPickup"/>
 	<hidden field="intakeOut"/>
-	<hidden field="operateArm: hatchRocketLow"/>
+	<hidden field="clawOpenAndEjectCargo"/>
 	<hidden field="ShoulderSensorAbs: "/>
-	<hidden field="HATCH : Transport"/>
 	<hidden field="CARGO : Human Player"/>
+	<hidden field="HATCH : Transport"/>
 </xml>

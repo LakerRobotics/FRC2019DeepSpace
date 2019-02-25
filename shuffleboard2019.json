@@ -151,7 +151,44 @@
               "Layout/Number of columns": 2,
               "Layout/Number of rows": 1,
               "Layout/Label position": "BOTTOM",
-              "_children": {}
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
+                  "_title": "OPEN CLAW"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
+                  "_title": "CLOSE CLAW"
+                }
+              }
+            }
+          },
+          "3,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/wristSynced",
+              "_title": "WRIST",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "4,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/shoulderSynced",
+              "_title": "SHOULDER",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
             }
           }
         }
@@ -167,63 +204,7 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "tiles": {
-          "0,0": {
-            "size": [
-              1,
-              2
-            ],
-            "content": {
-              "_type": "List Layout",
-              "_title": "SHOULDER",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/shoulderTargetPosition",
-                  "_title": "TARGET"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/ShoulderSensorAbs: ",
-                  "_title": "ABSOLUTE"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/ShoulderSensorPos: ",
-                  "_title": "RELATIVE"
-                }
-              ]
-            }
-          },
-          "1,0": {
-            "size": [
-              1,
-              2
-            ],
-            "content": {
-              "_type": "List Layout",
-              "_title": "WRIST",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/wristTargetPosition",
-                  "_title": "TARGET"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/wristSensorAbs: ",
-                  "_title": "ABSOLUTE"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/wristSensorPos: ",
-                  "_title": "RELATIVE"
-                }
-              ]
-            }
-          },
-          "2,0": {
+          "6,0": {
             "size": [
               1,
               2
@@ -244,6 +225,334 @@
                   "_title": "LEFT"
                 }
               ]
+            }
+          },
+          "0,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "SHOULDER",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "1,0": {
+                  "_type": "Graph",
+                  "_source0": "network_table:///SmartDashboard/shoulderCurrent",
+                  "_title": "SmartDashboard/shoulderCurrent",
+                  "Graph/Visible time": 30.0,
+                  "Visible data/SmartDashboard/shoulderCurrent": true
+                },
+                "1,1": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/shoulderSynced",
+                  "_title": "SHOULDER READY",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                },
+                "0,0": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/shoulderTargetPosition",
+                  "_title": "TARGET"
+                },
+                "0,1": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/ShoulderSensorAbs: ",
+                  "_title": "ABSOLUTE"
+                },
+                "0,2": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/ShoulderSensorPos: ",
+                  "_title": "RELATIVE"
+                }
+              }
+            }
+          },
+          "3,0": {
+            "size": [
+              3,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "WRIST",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristTargetPosition",
+                  "_title": "TARGET"
+                },
+                "0,1": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristSensorAbs: ",
+                  "_title": "ABSOLUTE"
+                },
+                "0,2": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/wristSensorPos: ",
+                  "_title": "RELATIVE"
+                },
+                "1,0": {
+                  "_type": "Graph",
+                  "_source0": "network_table:///SmartDashboard/wristCurrent",
+                  "_title": "SmartDashboard/wristCurrent",
+                  "Graph/Visible time": 30.0,
+                  "Visible data/SmartDashboard/wristCurrent": true
+                },
+                "1,1": {
+                  "_type": "Boolean Box",
+                  "_source0": "network_table:///SmartDashboard/wristSynced",
+                  "_title": "WRIST READY",
+                  "Colors/Color when true": "#7CFC00FF",
+                  "Colors/Color when false": "#8B0000FF"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "DEBUG DRIVE",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {}
+      }
+    },
+    {
+      "title": "EVENTS",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "0,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "CARGO GROUND",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Ground Pickup",
+                  "_title": "GROUND"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
+                  "_title": "OPEN CLAW"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeIn",
+                  "_title": "INTAKE IN"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
+                  "_title": "CLOSE CLAW"
+                }
+              ]
+            }
+          },
+          "3,0": {
+            "size": [
+              5,
+              2
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "DELIVER CARGO",
+              "Layout/Number of columns": 5,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket Low",
+                  "_title": "ROCKET LOW"
+                },
+                "1,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket Middle",
+                  "_title": "ROCKET MID"
+                },
+                "2,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket High",
+                  "_title": "ROCKET HIGH"
+                },
+                "3,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Rocket High Rear",
+                  "_title": "ROCKET BACK"
+                },
+                "4,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Cargo Ship",
+                  "_title": "CARGO SHIP"
+                },
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeOut",
+                  "_title": "INTAKE OUT"
+                },
+                "0,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
+                  "_title": "OPEN CLAW"
+                }
+              }
+            }
+          },
+          "3,2": {
+            "size": [
+              5,
+              2
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "DELIVER HATCH",
+              "Layout/Number of columns": 5,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Low",
+                  "_title": "ROCKET LOW"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Middle",
+                  "_title": "ROCKET MID"
+                },
+                "2,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket High",
+                  "_title": "ROCKET HIGH"
+                },
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
+                  "_title": "CLOSE CLAW"
+                },
+                "4,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Cargo Ship",
+                  "_title": "CARGO SHIP"
+                }
+              }
+            }
+          },
+          "1,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "CARGO FEEDER",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Human Player",
+                  "_title": "HUMAN PLAYER"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
+                  "_title": "OPEN CLAW"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
+                  "_title": "CLOSE CLAW"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CARGO : Ground Pickup",
+                  "_title": "GROUND"
+                }
+              ]
+            }
+          },
+          "2,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "List Layout",
+              "_title": "HATCH FEEDER",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
+                  "_title": "CLOSE CLAW"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Human Player",
+                  "_title": "HUMAN PLAYER"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
+                  "_title": "OPEN CLAW"
+                },
+                {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Transport",
+                  "_title": "TRANSPORT"
+                }
+              ]
+            }
+          },
+          "0,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/shoulderSynced",
+              "_title": "SHOULDER",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "1,3": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///SmartDashboard/wristSynced",
+              "_title": "WRIST",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
             }
           }
         }

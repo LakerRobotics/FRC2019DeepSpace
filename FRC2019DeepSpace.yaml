@@ -865,7 +865,7 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - &id030 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
+        - &id029 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
           type: double}
         name: Parameters
         validators: null
@@ -924,13 +924,12 @@ Children:
                 name: Parameters
                 validators: null
                 value:
-                - &id039 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
-                  type: double}
+                - *id029
               - !!robotbuilder.data.properties.ParameterSetProperty
-                default: &id029 []
+                default: &id030 []
                 name: Parameter presets
                 validators: null
-                value: *id029
+                value: *id030
               - !!robotbuilder.data.properties.BooleanProperty {default: false, name: Run When Disabled,
                 validators: null, value: false}
               - !!robotbuilder.data.properties.BooleanProperty {default: false, name: Autonomous Selection,
@@ -943,7 +942,7 @@ Children:
                 default: false, name: Autonomous Selection, validators: null, value: false}
               Parameters: !!robotbuilder.data.properties.ParametersProperty
                 default:
-                - *id030
+                - *id029
                 name: Parameters
                 validators: null
                 value:
@@ -986,7 +985,7 @@ Children:
               type: double, value: '0'}
           previous: *id033
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: false}
+        name: Button on SmartDashboard, validators: null, value: true}
     Base: Command Group
     Name: clawOpenAndEjectCargo
   - Children: []
@@ -1073,11 +1072,11 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id030
+        - *id029
         name: Parameters
         validators: null
         value:
-        - *id039
+        - !!robotbuilder.data.properties.ParameterDescriptor {name: timeout, type: double}
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
@@ -1088,7 +1087,7 @@ Children:
         validators: null
         value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: false}
+        name: Button on SmartDashboard, validators: null, value: true}
     Base: Timed Command
     Name: clawOperationTimedClose
   - Children: []
@@ -1097,11 +1096,11 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id030
+        - *id029
         name: Parameters
         validators: null
         value:
-        - &id040 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
+        - &id039 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
           type: double}
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
@@ -1126,11 +1125,11 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id030
+        - *id029
         name: Parameters
         validators: null
         value:
-        - *id040
+        - *id039
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,

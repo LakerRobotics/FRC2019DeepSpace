@@ -156,6 +156,8 @@ public String[] operateArmNames =
         SmartDashboard.putData("operateArm: cargoHumanPlayer", new operateArm(1738, 2048));
         SmartDashboard.putData("operateArm: cargoRocketHighBack", new operateArm(106, 1710));
 */        
+        SmartDashboard.putData("clawOpenAndEjectCargo", new clawOpenAndEjectCargo());
+        SmartDashboard.putData("clawOperationTimedClose", new clawOperationTimedClose());
         SmartDashboard.putData("intakeLiftUpTimed: default", new intakeLiftUpTimed(2));
         SmartDashboard.putData("intakeLiftDownTimed: default", new intakeLiftDownTimed(2));
 
