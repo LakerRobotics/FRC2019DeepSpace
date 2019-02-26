@@ -2,6 +2,13 @@
 # DESTINATION: DEEP SPACE
 Team 5053 starts the 2019 FRC season with no experienced programmers.  We will be developing a command robot using the FRC Robot Builder and FRC VS Code provided by WPILib.
 
+## IMPORTANT DEVELOPMENT NOTES
+If you use robot builder and export java, you must modify the following files:
+OI.java (comment out the auto-generated code for operateArm commands to the SmartDashboard)
+clawOpenAndEjectCargo.java (comment out the auto-generated add commands)
+operateArm.java (comment out the auto-generated add commands)
+
+
 ## Development
 ### Software Installation
 Several pieces of software will need to be installed on your development computer:

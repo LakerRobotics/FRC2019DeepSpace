@@ -8,7 +8,16 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  + 2019 Deep Space does not really have an autonomous 
+  + period.  It has a "sandstorm" period where the field
+  + is not visible to the drive teams.  The screen becomes
+  + visible after 15 seconds.  
+  +
+  + THIS COMMAND SHOULD NEVER BE USED
+  +
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+  
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;

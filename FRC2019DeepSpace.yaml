@@ -346,6 +346,24 @@ Children:
         value: []
     Base: Subsystem
     Name: distanceControl
+  - Children: []
+    Properties:
+      Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Send to SmartDashboard, validators: null, value: false}
+      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Default command parameters
+        validators: null
+        value: []
+      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Default Command, type: Command, validators: null, value: labViewInterface}
+      Constants: !!robotbuilder.data.properties.ConstantsProperty
+        default: []
+        name: Constants
+        validators: null
+        value: []
+    Base: Subsystem
+    Name: labViewSubsystem
   Properties: {}
   Base: Subsystems
   Name: Subsystems
@@ -865,7 +883,7 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - &id029 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
+        - &id030 !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
           type: double}
         name: Parameters
         validators: null
@@ -924,12 +942,13 @@ Children:
                 name: Parameters
                 validators: null
                 value:
-                - *id029
+                - !!robotbuilder.data.properties.ParameterDescriptor {name: timeout,
+                  type: double}
               - !!robotbuilder.data.properties.ParameterSetProperty
-                default: &id030 []
+                default: &id029 []
                 name: Parameter presets
                 validators: null
-                value: *id030
+                value: *id029
               - !!robotbuilder.data.properties.BooleanProperty {default: false, name: Run When Disabled,
                 validators: null, value: false}
               - !!robotbuilder.data.properties.BooleanProperty {default: false, name: Autonomous Selection,
@@ -942,7 +961,7 @@ Children:
                 default: false, name: Autonomous Selection, validators: null, value: false}
               Parameters: !!robotbuilder.data.properties.ParametersProperty
                 default:
-                - *id029
+                - *id030
                 name: Parameters
                 validators: null
                 value:
@@ -1072,7 +1091,7 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id029
+        - *id030
         name: Parameters
         validators: null
         value:
@@ -1096,7 +1115,7 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id029
+        - *id030
         name: Parameters
         validators: null
         value:
@@ -1125,7 +1144,7 @@ Children:
         name: Autonomous Selection, validators: null, value: false}
       Parameters: !!robotbuilder.data.properties.ParametersProperty
         default:
-        - *id029
+        - *id030
         name: Parameters
         validators: null
         value:
@@ -1147,6 +1166,28 @@ Children:
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Timed Command
     Name: intakeLiftDownTimed
+  - Children: []
+    Properties:
+      Autonomous Selection: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Autonomous Selection, validators: null, value: false}
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
+        name: Run When Disabled, validators: null, value: false}
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: labViewSubsystem}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: []
+        name: Parameter presets
+        validators: null
+        value: []
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: labViewInterface
   Properties: {}
   Base: Commands
   Name: Commands
