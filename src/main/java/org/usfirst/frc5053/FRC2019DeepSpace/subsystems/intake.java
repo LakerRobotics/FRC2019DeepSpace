@@ -54,7 +54,7 @@ public class intake extends Subsystem {
         addChild("intakeLeftVictorSP",intakeLeftVictorSP);
         intakeLeftVictorSP.setInverted(false);
         
-        intakeLiftSolenoid = new DoubleSolenoid(0, 5, 3);
+        intakeLiftSolenoid = new DoubleSolenoid(0, 2, 3);
         addChild("intakeLiftSolenoid",intakeLiftSolenoid);
         
         

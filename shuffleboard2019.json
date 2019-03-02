@@ -117,11 +117,6 @@
               "Layout/Number of rows": 2,
               "Layout/Label position": "BOTTOM",
               "_children": {
-                "0,0": {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/intakeIn",
-                  "_title": "IN"
-                },
                 "0,1": {
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/intakeOut",
@@ -136,6 +131,11 @@
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/intakeLiftDownTimed: default",
                   "_title": "DOWN"
+                },
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeIn",
+                  "_title": "IN"
                 }
               }
             }
@@ -201,6 +201,31 @@
               "_source0": "network_table:///SmartDashboard/armHeightEnum",
               "_title": "labVIEW Interface"
             }
+          },
+          "8,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "CLIMB",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 1,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/climbLower",
+                  "_title": "LOWER"
+                },
+                "1,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/climbLift",
+                  "_title": "LIFT"
+                }
+              }
+            }
           }
         }
       }
@@ -215,29 +240,6 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "tiles": {
-          "6,0": {
-            "size": [
-              1,
-              2
-            ],
-            "content": {
-              "_type": "List Layout",
-              "_title": "DISTANCE",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/rightUltrasonic",
-                  "_title": "RIGHT"
-                },
-                {
-                  "_type": "Text View",
-                  "_source0": "network_table:///SmartDashboard/leftUltrasonic",
-                  "_title": "LEFT"
-                }
-              ]
-            }
-          },
           "0,0": {
             "size": [
               3,
@@ -322,6 +324,41 @@
                   "_title": "WRIST READY",
                   "Colors/Color when true": "#7CFC00FF",
                   "Colors/Color when false": "#8B0000FF"
+                }
+              }
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              2
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "DISTANCE",
+              "Layout/Number of columns": 2,
+              "Layout/Number of rows": 2,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "1,0": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/rightUltrasonic",
+                  "_title": "RIGHT"
+                },
+                "1,1": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/rightDistanceTarget",
+                  "_title": "RIGHT TARGET"
+                },
+                "0,1": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/leftDistanceTarget",
+                  "_title": "LEFT TARGET"
+                },
+                "0,0": {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/leftUltrasonic",
+                  "_title": "LEFT"
                 }
               }
             }
@@ -571,9 +608,9 @@
     }
   ],
   "windowGeometry": {
-    "x": -7.333333492279053,
-    "y": -7.333333492279053,
-    "width": 1294.6666259765625,
-    "height": 694.6666870117188
+    "x": -406.0,
+    "y": 155.0,
+    "width": 1936.0,
+    "height": 1056.0
   }
 }

@@ -47,7 +47,7 @@ public class claw extends Subsystem {
         addChild("clawSolenoid",clawSolenoid);
         
         
-        clawPunchSolenoid = new DoubleSolenoid(0, 4, 6);
+        clawPunchSolenoid = new DoubleSolenoid(0, 4, 5);
         addChild("clawPunchSolenoid",clawPunchSolenoid);
         
         

@@ -209,7 +209,7 @@ Children:
           default: '0'
           name: Forward Channel (Solenoid)
           validators: &id014 [Solenoid]
-          value: '5'
+          value: '2'
       Base: Double Solenoid
       Name: intakeLiftSolenoid
     Properties:
@@ -277,7 +277,7 @@ Children:
           default: '0'
           name: Reverse Channel (Solenoid)
           validators: *id012
-          value: '6'
+          value: '5'
         Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id013
           default: '0'
@@ -401,7 +401,7 @@ Children:
           default: '0'
           name: Forward Channel (Solenoid)
           validators: *id014
-          value: '2'
+          value: '6'
       Base: Double Solenoid
       Name: rearLiftSolenoid
     Properties:
@@ -1265,10 +1265,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: climber}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id042 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id042
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
@@ -1287,10 +1287,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: climber}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id043 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id043
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
@@ -1313,10 +1313,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: distanceControl}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id044 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id044
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: false}
     Base: Command
@@ -1342,9 +1342,9 @@ Properties:
     name: Export Subsystems, validators: null, value: true}
   Simulation World File: !!robotbuilder.data.properties.StringProperty {default: /usr/share/frcsim/worlds/GearsBotDemo.world,
     name: Simulation World File, validators: null, value: /usr/share/frcsim/worlds/GearsBotDemo.world}
-  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\marye\',
+  Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Laker-Programming\',
     extension: null, folder: true, name: Wiring file location, validators: null, value: .\}
-  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\marye\FRCProjects',
+  Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Laker-Programming\FRCProjects',
     extension: null, folder: true, name: Export Directory, validators: null, value: ..\}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
