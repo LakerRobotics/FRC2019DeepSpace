@@ -65,7 +65,9 @@ public class labViewInterface extends Command {
                 {
                 // Act on the new request
                 commandToExecute = new operateArm(Robot.oi.operateArmParameters[convertedInputFromLabViewDashBoard][Robot.oi.ARM_PARAMETERS_SHOULDER_INDEX],
-                                                  Robot.oi.operateArmParameters[convertedInputFromLabViewDashBoard][Robot.oi.ARM_PARAMETERS_WRIST_INDEX]);
+                                                  Robot.oi.operateArmParameters[convertedInputFromLabViewDashBoard][Robot.oi.ARM_PARAMETERS_WRIST_INDEX],
+                                                  Robot.oi.operateArmParameters[convertedInputFromLabViewDashBoard][Robot.oi.ARM_PARAMETERS_RIGHT_DISTANCE_INDEX],
+                                                  Robot.oi.operateArmParameters[convertedInputFromLabViewDashBoard][Robot.oi.ARM_PARAMETERS_LEFT_DISTANCE_INDEX]);
                 System.out.println("Create Command");
                 commandToExecute.start();
                 Robot.oi.lastDashboardButton = convertedInputFromLabViewDashBoard;
