@@ -249,13 +249,13 @@ Children:
           default: '0'
           name: Reverse Channel (Solenoid)
           validators: *id012
-          value: '1'
+          value: '0'
         Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id013
           default: '0'
           name: Forward Channel (Solenoid)
           validators: *id014
-          value: '0'
+          value: '1'
       Base: Double Solenoid
       Name: clawSolenoid
     - Children: []
