@@ -26,6 +26,7 @@
 	<hidden field="shoulderSynced"/>
 	<hidden field="intakeLiftDownTimed: default"/>
 	<hidden field="HATCH : Rocket High"/>
+	<hidden field="armHeightEnum"/>
 	<hidden field="shoulderTargetPosition"/>
 	<hidden field="HATCH : Rocket Middle"/>
 	<hidden field="wristSensorAbs: "/>
@@ -49,6 +50,7 @@
 	<hidden field="ShoulderSensorPos: "/>
 	<hidden field="CARGO : Rocket Middle"/>
 	<hidden field="intakeOut"/>
+	<hidden field="labViewInterface"/>
 	<hidden field="clawOpenAndEjectCargo"/>
 	<hidden field="ShoulderSensorAbs: "/>
 	<hidden field="CARGO : Human Player"/>
