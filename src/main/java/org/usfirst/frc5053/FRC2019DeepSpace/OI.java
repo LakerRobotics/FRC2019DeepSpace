@@ -74,20 +74,12 @@ public class OI {
 
     public static int lastDashboardButton = INITIAL_AND_ERROR_BUTTON;      // No Button Pressed
     /**********************************
-     * {shoulder, wrist, distance}
+     * {shoulder, wrist, right distance, left distance}
      * NOTE that HATCH Rocket Low = HATCH Feeder = HATCH Cargo Ship
-     * TODO: Discuss the other commands with Grant
-     * TODO: Hatch ==> Feeder (Human Player)
-     * TODO: Cargo ==> Rocket High from Back of Robot
-     * TODO: Cargo ==> Ground Pickup
-     * TODO: Hatch ==> Transport
-     * TODO: Cowboy (Control Wrist/Shoulder with Joystick) ==> Is there a benefit to 
-     *       Allowing cowboy on one or both?
-     * 
-     */
+     **********************************/
     public double[][] operateArmParameters =
     {
-        {0, 0, 0},                  // 0: Not Used
+        {0, 0, 0, 0},                  // 0: Not Used
         {671, 2421, 1, 2},             // 1: Cargo ==> Rocket High
         {1321, 2239, 3, 4},            // 2: Cargo ==> Rocket Middle
         {2096, 1749, 5, 6},            // 3: Cargo ==> Rocket Low
@@ -101,28 +93,24 @@ public class OI {
         {2931, 580, 21, 22},               // 11: Hatch ==> Transport Position
         {2837, 1447, 23, 24},            // 12: Cargo ==> Ground Pickup
         {106, 1710, 25, 26}              // 13: Cargo ==> Rocket High (from back of Robot)
-/************** */
-//        {1422, 2239, 0},            // 2: Cargo ==> Rocket Middle
-//        {2197, 1749, 0},            // 3: Cargo ==> Rocket Low
-//        {1796, 2026, 0},            // 9: Cargo ==> Cargo Ship
-};
-public String[] operateArmNames =
-{
-    "Not Used",                  // 0: Not Used
-    "CARGO : Rocket High",       // 1: Cargo ==> Rocket High
-    "CARGO : Rocket Middle",     // 2: Cargo ==> Rocket Middle
-    "CARGO : Rocket Low",        // 3: Cargo ==> Rocket Low
-    "HATCH : Rocket High",       // 4: Hatch ==> Rocket High
-    "HATCH : Rocket Middle",     // 5: Hatch ==> Rocket Middle
-    "HATCH : Rocket Low",        // 6: Hatch ==> Rocket Low
-    "HATCH : Cargo Ship",        // 7: Hatch ==> Cargo Ship
-    "CARGO : Cargo Ship",        // 8: Cargo ==> Cargo Ship
-    "HATCH : Human Player",      // 9: Hatch ==> Feeder (Human Player)
-    "CARGO : Human Player",      // 10: Cargo ==> Feeder (Human Player)
-    "HATCH : Transport",         // 11: Hatch ==> Transport Position
-    "CARGO : Ground Pickup",     // 12: Cargo ==> Ground Pickup
-    "CARGO : Rocket High Rear"   // 13: Cargo ==> Rocket High (from back of Robot)
-};
+    };
+    public String[] operateArmNames =
+    {
+        "Not Used",                  // 0: Not Used
+        "CARGO : Rocket High",       // 1: Cargo ==> Rocket High
+        "CARGO : Rocket Middle",     // 2: Cargo ==> Rocket Middle
+        "CARGO : Rocket Low",        // 3: Cargo ==> Rocket Low
+        "HATCH : Rocket High",       // 4: Hatch ==> Rocket High
+        "HATCH : Rocket Middle",     // 5: Hatch ==> Rocket Middle
+        "HATCH : Rocket Low",        // 6: Hatch ==> Rocket Low
+        "HATCH : Cargo Ship",        // 7: Hatch ==> Cargo Ship
+        "CARGO : Cargo Ship",        // 8: Cargo ==> Cargo Ship
+        "HATCH : Human Player",      // 9: Hatch ==> Feeder (Human Player)
+        "CARGO : Human Player",      // 10: Cargo ==> Feeder (Human Player)
+        "HATCH : Transport",         // 11: Hatch ==> Transport Position
+        "CARGO : Ground Pickup",     // 12: Cargo ==> Ground Pickup
+        "CARGO : Rocket High Rear"   // 13: Cargo ==> Rocket High (from back of Robot)
+    };
 
 
     public OI() {
