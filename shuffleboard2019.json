@@ -256,8 +256,7 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/shoulderCurrent",
                   "_title": "SmartDashboard/shoulderCurrent",
-                  "Graph/Visible time": 30.0,
-                  "Visible data/SmartDashboard/shoulderCurrent": true
+                  "Graph/Visible time": 30.0
                 },
                 "1,1": {
                   "_type": "Boolean Box",
@@ -315,8 +314,7 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/wristCurrent",
                   "_title": "SmartDashboard/wristCurrent",
-                  "Graph/Visible time": 30.0,
-                  "Visible data/SmartDashboard/wristCurrent": true
+                  "Graph/Visible time": 30.0
                 },
                 "1,1": {
                   "_type": "Boolean Box",

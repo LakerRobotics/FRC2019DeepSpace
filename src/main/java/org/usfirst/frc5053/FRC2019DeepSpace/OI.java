@@ -70,7 +70,7 @@ public class OI {
     public static final int ARM_PARAMETERS_WRIST_INDEX = 1;
     public static final int ARM_PARAMETERS_RIGHT_DISTANCE_INDEX = 2;
     public static final int ARM_PARAMETERS_LEFT_DISTANCE_INDEX = 3;
-    public static final int NUMBER_OF_ARM_POSITIONS = 13;
+    public static final int NUMBER_OF_ARM_POSITIONS = 15;
 
     public static int lastDashboardButton = INITIAL_AND_ERROR_BUTTON;      // No Button Pressed
     /**********************************
@@ -81,35 +81,39 @@ public class OI {
     {
         {0, 0, 0, 0},                  // 0: Not Used
         {671, 2421, 1, 2},             // 1: Cargo ==> Rocket High
-        {1321, 2239, 3, 4},            // 2: Cargo ==> Rocket Middle
-        {2096, 1749, 5, 6},            // 3: Cargo ==> Rocket Low
-        {537, 2864, 7, 8},             // 4: Hatch ==> Rocket High
-        {1607, 2166, 9, 10},            // 5: Hatch ==> Rocket Middle
-        {2605, 1341, 11, 12},            // 6: Hatch ==> Rocket Low
-        {2605, 1341, 13, 14},            // 7: Hatch ==> Cargo Ship
-        {1632, 2321, 15, 16},            // 8: Cargo ==> Cargo Ship
-        {2605, 1341, 17, 18},            // 9: Hatch ==> Feeder (Human Player)
-        {1738, 2048, 19, 20},            // 10: Cargo ==> Feeder (Human Player)
-        {2931, 580, 21, 22},               // 11: Hatch ==> Transport Position
-        {2837, 1447, 23, 24},            // 12: Cargo ==> Ground Pickup
-        {106, 1710, 25, 26}              // 13: Cargo ==> Rocket High (from back of Robot)
+        {1325, 2494, 3, 4},            // 2: Cargo ==> Rocket Middle
+        {2083, 1980, 5, 6},            // 3: Cargo ==> Rocket Low
+        {820, 2572, 7, 8},             // 4: Hatch ==> Rocket High
+        {1650, 2142, 9, 10},           // 5: Hatch ==> Rocket Middle
+        {2605, 1341, 11, 12},          // 6: Hatch ==> Rocket Low
+        {2605, 1341, 13, 14},          // 7: Hatch ==> Cargo Ship
+        {1632, 2321, 15, 16},          // 8: Cargo ==> Cargo Ship
+        {2605, 1341, 17, 18},          // 9: Hatch ==> Feeder (Human Player)
+        {1738, 2048, 19, 20},          // 10: Cargo ==> Feeder (Human Player)
+        {2931, 500, 21, 22},           // 11: Hatch ==> Transport Position
+        {2837, 1447, 23, 24},          // 12: Cargo ==> Ground Pickup
+        {273, 1486, 25, 26},           // 13: Cargo ==> Rocket High (from back of Robot)
+        {332,1130, 27, 29},            // 14: Hatch ==> Rocket High (from back of Robot)
+        {2319, 2555, 30, 31}           // 15: CLIMB ==> Use arm to raise front wheels to platform
     };
     public String[] operateArmNames =
     {
-        "Not Used",                  // 0: Not Used
-        "CARGO : Rocket High",       // 1: Cargo ==> Rocket High
-        "CARGO : Rocket Middle",     // 2: Cargo ==> Rocket Middle
-        "CARGO : Rocket Low",        // 3: Cargo ==> Rocket Low
-        "HATCH : Rocket High",       // 4: Hatch ==> Rocket High
-        "HATCH : Rocket Middle",     // 5: Hatch ==> Rocket Middle
-        "HATCH : Rocket Low",        // 6: Hatch ==> Rocket Low
-        "HATCH : Cargo Ship",        // 7: Hatch ==> Cargo Ship
-        "CARGO : Cargo Ship",        // 8: Cargo ==> Cargo Ship
-        "HATCH : Human Player",      // 9: Hatch ==> Feeder (Human Player)
-        "CARGO : Human Player",      // 10: Cargo ==> Feeder (Human Player)
-        "HATCH : Transport",         // 11: Hatch ==> Transport Position
-        "CARGO : Ground Pickup",     // 12: Cargo ==> Ground Pickup
-        "CARGO : Rocket High Rear"   // 13: Cargo ==> Rocket High (from back of Robot)
+        "Not Used",                     // 0: Not Used
+        "CARGO : Rocket High",          // 1: Cargo ==> Rocket High
+        "CARGO : Rocket Middle",        // 2: Cargo ==> Rocket Middle
+        "CARGO : Rocket Low",           // 3: Cargo ==> Rocket Low
+        "HATCH : Rocket High",          // 4: Hatch ==> Rocket High
+        "HATCH : Rocket Middle",        // 5: Hatch ==> Rocket Middle
+        "HATCH : Rocket Low",           // 6: Hatch ==> Rocket Low
+        "HATCH : Cargo Ship",           // 7: Hatch ==> Cargo Ship
+        "CARGO : Cargo Ship",           // 8: Cargo ==> Cargo Ship
+        "HATCH : Human Player",         // 9: Hatch ==> Feeder (Human Player)
+        "CARGO : Human Player",         // 10: Cargo ==> Feeder (Human Player)
+        "HATCH : Transport",            // 11: Hatch ==> Transport Position
+        "CARGO : Ground Pickup",        // 12: Cargo ==> Ground Pickup
+        "CARGO : Rocket High Rear",     // 13: Cargo ==> Rocket High (from back of Robot)
+        "HATCH : Rocket High Rear",     // 14: Hatch ==> Rocket High (from back of Robot)
+        "CLIMB : Raise Front Wheels"    // 15: CLIMB ==> Use arm to raise front wheels to platform
     };
 
 
