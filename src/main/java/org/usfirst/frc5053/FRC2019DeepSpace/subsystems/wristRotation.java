@@ -108,11 +108,11 @@ public class wristRotation extends Subsystem {
 
     // 20190208 SNW begin added code
     public void moveWrist(double inputSpeed) {
-        wristTalonSRX.set(inputSpeed);
+        wristTalonSRX.set(ControlMode.PercentOutput, inputSpeed);
     }
 
     public void stopWrist(){
-        wristTalonSRX.set(0);
+        wristTalonSRX.set(ControlMode.PercentOutput, 0.0);
     }
     // 20190208 SNW end added code
 

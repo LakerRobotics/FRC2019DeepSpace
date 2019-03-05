@@ -97,7 +97,11 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void disabledInit(){
-
+        // Suggested by Prateek_M Team 5190 Programming Lead
+        // to prevent the shoulder and wrist from moving when 
+        // enable is pressed.
+        shoulderLift.stopShoulder();
+        wristRotation.stopWrist();
     }
 
     @Override
@@ -107,9 +111,10 @@ public class Robot extends TimedRobot {
 
     @Override
     public void autonomousInit() {
-        autonomousCommand = chooser.getSelected();
+        // autonomousCommand = chooser.getSelected();
         // schedule the autonomous command (example)
-        if (autonomousCommand != null) autonomousCommand.start();
+        // if (autonomousCommand != null) autonomousCommand.start();
+        teleopInit();   // According to multiple posts on ChiefDelphi, this should work during sandstorm 2019
     }
 
     /**
@@ -117,7 +122,8 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void autonomousPeriodic() {
-        Scheduler.getInstance().run();
+        // Scheduler.getInstance().run();
+        teleopPeriodic();   // According to multiple posts on ChiefDelphi, this should work during sandstorm 2019
     }
 
     @Override
@@ -127,6 +133,10 @@ public class Robot extends TimedRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
+
+        // Make sure that the encoder values are in-sync everytime we enable
+        shoulderLift.syncEncoderValues();
+        wristRotation.syncEncoders();
     }
 
     /**
