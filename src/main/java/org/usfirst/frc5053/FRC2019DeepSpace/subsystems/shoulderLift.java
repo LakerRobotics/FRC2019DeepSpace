@@ -135,7 +135,7 @@ public class shoulderLift extends Subsystem {
 
         if (isEncoderSynced())
         {
-            System.out.println("shoulderLift.startMoveToPosition ISSUE TALON COMMAND");
+            // System.out.println("shoulderLift.startMoveToPosition ISSUE TALON COMMAND");
             shoulderTalonSRX.set(ControlMode.Position, targetPosition);
             SmartDashboard.putNumber("shoulderTargetPosition", shoulderTalonSRX.getClosedLoopTarget(0));
         }

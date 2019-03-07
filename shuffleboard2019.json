@@ -256,7 +256,8 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/shoulderCurrent",
                   "_title": "SmartDashboard/shoulderCurrent",
-                  "Graph/Visible time": 30.0
+                  "Graph/Visible time": 30.0,
+                  "Visible data/SmartDashboard/shoulderCurrent": true
                 },
                 "1,1": {
                   "_type": "Boolean Box",
@@ -314,7 +315,8 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/wristCurrent",
                   "_title": "SmartDashboard/wristCurrent",
-                  "Graph/Visible time": 30.0
+                  "Graph/Visible time": 30.0,
+                  "Visible data/SmartDashboard/wristCurrent": true
                 },
                 "1,1": {
                   "_type": "Boolean Box",
@@ -386,7 +388,7 @@
         "hgap": 16.0,
         "vgap": 16.0,
         "tiles": {
-          "0,0": {
+          "1,0": {
             "size": [
               1,
               3
@@ -419,7 +421,7 @@
               ]
             }
           },
-          "3,0": {
+          "4,0": {
             "size": [
               5,
               2
@@ -465,11 +467,21 @@
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
                   "_title": "OPEN CLAW"
+                },
+                "2,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftDownTimed: default",
+                  "_title": "INTAKE DOWN"
+                },
+                "2,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftUpTimed: default",
+                  "_title": "INTAKE UP"
                 }
               }
             }
           },
-          "3,2": {
+          "4,2": {
             "size": [
               5,
               2
@@ -481,35 +493,50 @@
               "Layout/Number of rows": 3,
               "Layout/Label position": "BOTTOM",
               "_children": {
-                "0,0": {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Low",
-                  "_title": "ROCKET LOW"
-                },
-                "1,0": {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Middle",
-                  "_title": "ROCKET MID"
-                },
-                "2,0": {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket High",
-                  "_title": "ROCKET HIGH"
-                },
-                "0,1": {
+                "0,2": {
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
                   "_title": "CLOSE CLAW"
                 },
-                "4,0": {
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Low",
+                  "_title": "ROCKET LOW"
+                },
+                "1,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket Middle",
+                  "_title": "ROCKET MID"
+                },
+                "2,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket High",
+                  "_title": "ROCKET HIGH"
+                },
+                "3,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/HATCH : Rocket High Rear",
+                  "_title": "ROCKET BACK"
+                },
+                "4,1": {
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/HATCH : Cargo Ship",
                   "_title": "CARGO SHIP"
+                },
+                "2,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftDownTimed: default",
+                  "_title": "INTAKE DOWN"
+                },
+                "2,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftUpTimed: default",
+                  "_title": "INTAKE UP"
                 }
               }
             }
           },
-          "1,0": {
+          "2,0": {
             "size": [
               1,
               3
@@ -542,7 +569,7 @@
               ]
             }
           },
-          "2,0": {
+          "3,0": {
             "size": [
               1,
               3
@@ -600,15 +627,65 @@
               "Colors/Color when true": "#7CFC00FF",
               "Colors/Color when false": "#8B0000FF"
             }
+          },
+          "9,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "CLIMB",
+              "Layout/Number of columns": 1,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/CLIMB : Raise Front Wheels",
+                  "_title": "LIFT FRONT OF ROBOT"
+                },
+                "0,1": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/climbLift",
+                  "_title": "LIFT BACK OF ROBOT"
+                },
+                "0,2": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/climbLower",
+                  "_title": "LOWER BACK OF ROBOT"
+                }
+              }
+            }
+          },
+          "0,0": {
+            "size": [
+              1,
+              3
+            ],
+            "content": {
+              "_type": "Grid Layout",
+              "_title": "SANDSTORM",
+              "Layout/Number of columns": 1,
+              "Layout/Number of rows": 3,
+              "Layout/Label position": "BOTTOM",
+              "_children": {
+                "0,0": {
+                  "_type": "Command",
+                  "_source0": "network_table:///SmartDashboard/intakeLiftDownTimed: default",
+                  "_title": "LOWER LIFT"
+                }
+              }
+            }
           }
         }
       }
     }
   ],
   "windowGeometry": {
-    "x": 415.0,
-    "y": 9.0,
-    "width": 1490.0,
-    "height": 671.0
+    "x": 1927.0,
+    "y": 0.0,
+    "width": 1936.0,
+    "height": 1056.0
   }
 }
