@@ -65,6 +65,6 @@ public class clawOpenAndEjectCargo extends CommandGroup {
      * Increase the timer from 0.2 seconds to 3 seconds
      * This should help us score even if the claw is slow to open
      */
-    addSequential(new clawPunch(3));  
+    addSequential(new clawPunch(1));  
 } 
 }
