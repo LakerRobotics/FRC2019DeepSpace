@@ -371,11 +371,135 @@
       "autoPopulate": false,
       "autoPopulatePrefix": "",
       "widgetPane": {
-        "gridSize": 128.0,
+        "gridSize": 64.0,
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "tiles": {}
+        "tiles": {
+          "4,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Ultrasonic",
+              "_source0": "network_table:///LiveWindow/distanceControl/leftUltrasonic",
+              "_title": "Left Distance",
+              "Unit/Unit": "INCH"
+            }
+          },
+          "6,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Ultrasonic",
+              "_source0": "network_table:///LiveWindow/distanceControl/rightUltrasonic",
+              "_title": "Right Distance",
+              "Unit/Unit": "INCH"
+            }
+          },
+          "9,0": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Operator Selection: ",
+              "_title": "Operator Selection: "
+            }
+          },
+          "4,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/LeftTargetDistance: ",
+              "_title": "Left Target"
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/RightTargetDistance: ",
+              "_title": "Right Target "
+            }
+          },
+          "0,0": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Shoulder Encoder Target: ",
+              "_title": "Shoulder Target: "
+            }
+          },
+          "0,1": {
+            "size": [
+              2,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Wrist Encoder Target: ",
+              "_title": "Wrist Target: "
+            }
+          },
+          "9,1": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/WRIST ACTION: ",
+              "_title": "SmartDashboard/WRIST ACTION: "
+            }
+          },
+          "9,2": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/SHOULDER ACTION: ",
+              "_title": "SmartDashboard/SHOULDER ACTION: "
+            }
+          },
+          "9,3": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/INTAKE ACTION: ",
+              "_title": "SmartDashboard/INTAKE ACTION: "
+            }
+          },
+          "9,4": {
+            "size": [
+              5,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/CLAW ACTION: ",
+              "_title": "SmartDashboard/CLAW ACTION: "
+            }
+          }
+        }
       }
     },
     {

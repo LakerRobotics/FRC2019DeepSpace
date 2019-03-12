@@ -54,16 +54,6 @@ public class driveTrainArcadeTeleOp extends Command {
         //          direction of the physical turn was reverse of our
         //          desired direction
         
-        /***********************
-         * 20190218
-         * Rumble the joystick if we are too close to something
-         ***********************/
-        // TODO: Add distance checking here
-        // TODO:      See what values we receive
-        // TODO:      Determine our tolerance
-        // TODO:      Determine what changing the value does
-        Robot.oi.xbox360.setRumble(RumbleType.kLeftRumble, 1);
-
         Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)*.8,
                                 -Robot.oi.xbox360.getRawAxis(4)*.8);               
     }

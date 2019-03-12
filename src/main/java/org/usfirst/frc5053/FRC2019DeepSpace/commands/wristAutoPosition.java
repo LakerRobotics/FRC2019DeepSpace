@@ -11,6 +11,8 @@
 
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 
 /**
@@ -40,6 +42,7 @@ public class wristAutoPosition extends Command {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+        SmartDashboard.putString("WRIST ACTION: ", "wristAutoPosition.initialize: " + m_wristPosition);
     }
 
     // Called repeatedly when this Command is scheduled to run

@@ -12,6 +12,8 @@
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 
 import edu.wpi.first.wpilibj.command.TimedCommand;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 
 /**
@@ -39,7 +41,7 @@ public class intakeLiftUpTimed extends TimedCommand {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
-
+        SmartDashboard.putString("INTAKE ACTION: ", "intakeLiftUpTimed.initialize");
     }
 
     // Called repeatedly when this Command is scheduled to run
