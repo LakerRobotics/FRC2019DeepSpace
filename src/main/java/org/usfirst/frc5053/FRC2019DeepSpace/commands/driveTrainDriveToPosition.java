@@ -46,6 +46,7 @@ public class driveTrainDriveToPosition extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+
         // TODO: Add code to determine if we are already too close!
         Robot.driveTrain.arcade(-0.5, 0.0);
     }
