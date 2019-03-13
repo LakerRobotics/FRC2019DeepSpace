@@ -56,6 +56,8 @@ public class driveTrainArcadeTeleOp extends Command {
         
         Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)*.8,
                                 -Robot.oi.xbox360.getRawAxis(4)*.8);               
+        //Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)+0.15,
+        //                        -(Robot.oi.xbox360.getRawAxis(4)+0.15));               
     }
 
     // Make this return true when this Command no longer needs to run execute()
