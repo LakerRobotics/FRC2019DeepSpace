@@ -48,7 +48,7 @@ public class driveTrainDriveToPosition extends Command {
     protected void execute() {
 
         // TODO: Add code to determine if we are already too close!
-        Robot.driveTrain.arcade(-0.5, 0.0);
+        Robot.driveTrain.arcade(-0.6, 0.0);
     }
 
     // Make this return true when this Command no longer needs to run execute()
