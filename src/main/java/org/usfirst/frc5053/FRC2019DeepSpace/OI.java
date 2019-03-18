@@ -158,10 +158,10 @@ public class OI {
         //rocketMid = new JoystickButton(logitech, 10);
         //rocketMid.whenPressed(new setupRobotVariables(0));
         //rocketHigh = new JoystickButton(logitech, 8);
-        //rocketHigh.whenPressed(new setupRobotVariables(0));
+       // rocketHigh.whenPressed(new setupRobotVariables(0));
         //cargoShip = new JoystickButton(logitech, 7);
         //cargoShip.whenPressed(new setupRobotVariables(0));
-        //humanPlayer = new JoystickButton(logitech, 9);
+        //umanPlayer = new JoystickButton(logitech, 9);
         //humanPlayer.whenPressed(new setupRobotVariables(0));
         //groundTransport = new JoystickButton(logitech, 11);
         //groundTransport.whenPressed(new setupRobotVariables(0));
@@ -187,6 +187,7 @@ public class OI {
         SmartDashboard.putData("intakeOut", new intakeOut());
         SmartDashboard.putData("intakeIn", new intakeIn());
         SmartDashboard.putData("clawOpenAndEjectCargo", new clawOpenAndEjectCargo());
+        SmartDashboard.putData("clawOperationTimedClose", new clawOperationTimedClose());
         SmartDashboard.putData("intakeLiftUpTimed: default", new intakeLiftUpTimed(2));
         SmartDashboard.putData("climbLift", new climbLift());
         SmartDashboard.putData("intakeLiftDownTimed: default", new intakeLiftDownTimed(2));

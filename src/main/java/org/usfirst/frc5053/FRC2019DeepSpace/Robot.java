@@ -104,6 +104,7 @@ public class Robot extends TimedRobot {
         // enable is pressed.
         shoulderLift.stopShoulder();
         wristRotation.stopWrist();
+        Scheduler.getInstance().removeAll();  // DO WE WANT TO DO THIS?
     }
 
     @Override
