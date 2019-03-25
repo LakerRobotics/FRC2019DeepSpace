@@ -3,13 +3,8 @@
 Team 5053 starts the 2019 FRC season with no experienced programmers.  We will be developing a command robot using the FRC Robot Builder and FRC VS Code provided by WPILib.
 
 ## IMPORTANT DEVELOPMENT NOTES
-If you use robot builder and export java, you must modify the following files:
-     clawOpenAndEjectCargo.java (comment out the auto-generated add commands)
-     cmdGroundPickupGroup.java (comment out the auto-generated add commands)
-     cmdHatchHumanPlayer.java (comment out the auto-generated add command for operateArm)
-     cmdRocketHigh.java (comment out the auto-generated add command for operateArm)
-     operateArm.java (comment out the auto-generated add commands)
-     OI.java (comment out auto-generated buttons for setupRobotVariables)
+If you use robot builder and export java, you must modify the following files
+    
 
 
 ## Development
