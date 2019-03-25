@@ -96,13 +96,13 @@ public class intake extends Subsystem {
     // here. Call these from Commands.
 
     public void moveIntakeOut(){
-        Robot.intake.intakeRightVictorSP.set(.5);
-        Robot.intake.intakeLeftVictorSP.set(.5);
+        Robot.intake.intakeRightVictorSP.set(.7);
+        Robot.intake.intakeLeftVictorSP.set(.7);
     }
 
     public void moveIntakeIn(){
-        Robot.intake.intakeRightVictorSP.set(-.5);
-        Robot.intake.intakeLeftVictorSP.set(-.5);
+        Robot.intake.intakeRightVictorSP.set(-.7);
+        Robot.intake.intakeLeftVictorSP.set(-.7);
     }
 
     public void stop(){
