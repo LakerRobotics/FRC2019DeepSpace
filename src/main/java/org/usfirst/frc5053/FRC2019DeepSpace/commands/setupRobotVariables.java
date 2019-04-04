@@ -11,6 +11,8 @@
 
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.Scheduler;
+
 import org.usfirst.frc5053.FRC2019DeepSpace.OI;
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -94,28 +96,49 @@ public class setupRobotVariables extends Command {
         if (OI.SELECTED_DELIVERY_POSITION == OI.GROUND_AND_TRANSPORT &&
             OI.SELECTED_GAME_PIECE == OI.GAME_PIECE_CARGO)
             {   // Cargo Ground Pickup, Intake IN, Open Claw
-                m_IntakeLiftDownTimed.start();
-                m_GroundPickup.start();
+                // m_IntakeLiftDownTimed.start();
+                Scheduler.getInstance().add(new intakeLiftDownTimed(0));
+                // m_GroundPickup.start();
+                Scheduler.getInstance().add(new cmdGroundPickupGroup(Robot.oi.getShoulderTarget(),
+                                                                     Robot.oi.getWristTarget(),
+                                                                     Robot.oi.getRightUltrasonicTarget(),
+                                                                    Robot.oi.getLeftUltrasonicTarget()));
             }
         else
             {
 
             if (OI.SELECTED_DELIVERY_POSITION == OI.ROCKET_HIGH)
                 {   // Rocket High (Cargo or Hatch), Raise Intake
-                    m_RocketHIgh.start();
+            
+                    Scheduler.getInstance().add(new cmdRocketHigh(Robot.oi.getShoulderTarget(),
+                                                                  Robot.oi.getWristTarget(),
+                                                                  Robot.oi.getRightUltrasonicTarget(),
+                                                                  Robot.oi.getLeftUltrasonicTarget()));
+                    //m_RocketHIgh.start();
+            
                 }
             else
                 {
                     if (OI.SELECTED_DELIVERY_POSITION == OI.HUMAN_PLAYER &&
                         OI.SELECTED_GAME_PIECE == OI.GAME_PIECE_HATCH)
                         {   // Hatch Human Player, Close Claw
-                            m_IntakeLiftDownTimed.start();
-                            m_HatchHumanPlayer.start();
+                            Scheduler.getInstance().add(new intakeLiftDownTimed(0));
+                            //m_IntakeLiftDownTimed.start();
+                            Scheduler.getInstance().add(new cmdHatchHumanPlayer(Robot.oi.getShoulderTarget(),
+                                                                                Robot.oi.getWristTarget(),
+                                                                                Robot.oi.getRightUltrasonicTarget(),
+                                                                                Robot.oi.getLeftUltrasonicTarget()));
+                            //m_HatchHumanPlayer.start();
                         }
                     else
                         {
-                            m_IntakeLiftDownTimed.start();
-                            m_OperateArm.start();
+                            Scheduler.getInstance().add(new intakeLiftDownTimed(0));
+                            //m_IntakeLiftDownTimed.start();
+                            Scheduler.getInstance().add(new operateArm(Robot.oi.getShoulderTarget(),
+                                                                       Robot.oi.getWristTarget(),
+                                                                       Robot.oi.getRightUltrasonicTarget(),
+                                                                       Robot.oi.getLeftUltrasonicTarget()));
+                            //m_OperateArm.start();
                         }
                 }
             }

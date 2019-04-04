@@ -114,13 +114,13 @@ public class OI {
     {
         {   0,    0,  0.0,  0.0},       // 0: Not Used
         {2931,  500,  0.0,  0.0},       // 11: Hatch ==> Transport Position
-        {2509, 1532, 18.5, 18.5},       // 9: Hatch ==> Feeder (Human Player)
+        {2509, 1624, 18.5, 18.5},       // 9: Hatch ==> Feeder (Human Player)
         {2509, 1532, 18.5, 18.5},       // 7: Hatch ==> Cargo Ship
         {2509, 1532, 18.5, 18.5},       // 6: Hatch ==> Rocket Low
         {1650, 2142, 29.0, 29.0},       // 5: Hatch ==> Rocket Middle
-        { 820, 2572, 10.4, 10.4},       // 4: Hatch ==> Rocket High
+        { 820, 2549, 10.4, 10.4},       // 4: Hatch ==> Rocket High
         { 332, 1130,  0.0,  0.0},       // 14: Hatch ==> Rocket High (from back of Robot)
-        {2837, 1447,  0.0,  0.0},       // 12: Cargo ==> Ground Pickup
+        {2870, 1540,  0.0,  0.0},       // 12: Cargo ==> Ground Pickup
         {1738, 2048, 28.0, 28.0},       // 10: Cargo ==> Feeder (Human Player)
         {1632, 2382, 18.5, 18.5},       // 8: Cargo ==> Cargo Ship
         {2083, 1980, 24.0, 24.0},       // 3: Cargo ==> Rocket Low
