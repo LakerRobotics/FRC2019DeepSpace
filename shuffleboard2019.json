@@ -72,11 +72,6 @@
               "Layout/Number of rows": 4,
               "Layout/Label position": "BOTTOM",
               "_children": {
-                "0,0": {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Transport",
-                  "_title": "Transport"
-                },
                 "0,1": {
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/HATCH : Human Player",
@@ -694,39 +689,6 @@
                   "_type": "Command",
                   "_source0": "network_table:///SmartDashboard/CARGO : Ground Pickup",
                   "_title": "GROUND"
-                }
-              ]
-            }
-          },
-          "3,0": {
-            "size": [
-              1,
-              3
-            ],
-            "content": {
-              "_type": "List Layout",
-              "_title": "HATCH FEEDER",
-              "Layout/Label position": "BOTTOM",
-              "_children": [
-                {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/clawOperationTimedClose",
-                  "_title": "CLOSE CLAW"
-                },
-                {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Human Player",
-                  "_title": "HUMAN PLAYER"
-                },
-                {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/clawOpenAndEjectCargo",
-                  "_title": "OPEN CLAW"
-                },
-                {
-                  "_type": "Command",
-                  "_source0": "network_table:///SmartDashboard/HATCH : Transport",
-                  "_title": "TRANSPORT"
                 }
               ]
             }

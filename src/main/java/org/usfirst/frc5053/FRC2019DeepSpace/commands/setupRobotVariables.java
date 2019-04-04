@@ -16,6 +16,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import org.usfirst.frc5053.FRC2019DeepSpace.OI;
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+//import jdk.internal.vm.annotation.DontInline;
 /**
  *
  */
@@ -131,7 +132,15 @@ public class setupRobotVariables extends Command {
                             //m_HatchHumanPlayer.start();
                         }
                     else
-                        {
+                    {
+                        if (OI.SELECTED_DELIVERY_POSITION == OI.GROUND_AND_TRANSPORT &&
+                            OI.SELECTED_GAME_PIECE == OI.GAME_PIECE_HATCH)
+                            {
+                                // THIS WILL BREAK THE ROBOT
+                                // DON'T DO IT!!!!!
+                            }
+                        else
+                            {
                             Scheduler.getInstance().add(new intakeLiftDownTimed(0));
                             //m_IntakeLiftDownTimed.start();
                             Scheduler.getInstance().add(new operateArm(Robot.oi.getShoulderTarget(),
@@ -139,7 +148,8 @@ public class setupRobotVariables extends Command {
                                                                        Robot.oi.getRightUltrasonicTarget(),
                                                                        Robot.oi.getLeftUltrasonicTarget()));
                             //m_OperateArm.start();
-                        }
+                            }
+                    }
                 }
             }
     }
