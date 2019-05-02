@@ -44,7 +44,7 @@ public class shoulderLift extends Subsystem {
     final int kTimeoutMs = 30;
     boolean kSensorPhase = false;
     boolean kMotorInvert = false;
-    final double kP = 8.0; // SNW 16.0 was good, except it started oscillating at the rocket high
+    final double kP = 4.0; // SNW 16.0 was good, except it started oscillating at the rocket high
     final double kI = 0.0;
     final double kD = 0.0;
     final double kF = 0.0;
