@@ -55,9 +55,7 @@ public class driveTrainArcadeTeleOp extends Command {
         // 20190205 Modified the rotate stick to feed a negative value -- the
         //          direction of the physical turn was reverse of our
         //          desired direction
-        final double MAX_MOTOR_OUTPUT = 0.5;
-        final double MIN_MOTOR_OUTPUT = 0.25;
-
+        
         double forwardPowerValue = 0;
         if (Robot.oi.xbox360.getRawAxis(1) == 0)
         {
@@ -65,14 +63,12 @@ public class driveTrainArcadeTeleOp extends Command {
         }
         else if (Robot.oi.xbox360.getRawAxis(1) < 0)
         {
-            forwardPowerValue = ((MAX_MOTOR_OUTPUT-MIN_MOTOR_OUTPUT) * Robot.oi.xbox360.getRawAxis(1)) - MIN_MOTOR_OUTPUT;
+            forwardPowerValue = (0.75 * Robot.oi.xbox360.getRawAxis(1)) - 0.25;
         }
         else if (Robot.oi.xbox360.getRawAxis(1) > 0)
         {
-            forwardPowerValue = ((MAX_MOTOR_OUTPUT-MIN_MOTOR_OUTPUT) * Robot.oi.xbox360.getRawAxis(1)) + MIN_MOTOR_OUTPUT;
+            forwardPowerValue = (0.75 * Robot.oi.xbox360.getRawAxis(1)) + 0.25;
         }
-
-        forwardPowerValue = (forwardPowerValue * 0.5);
 
         double rotationpower = 0;
         if (Robot.oi.xbox360.getRawAxis(4) == 0)
@@ -81,21 +77,16 @@ public class driveTrainArcadeTeleOp extends Command {
         }
         else if (Robot.oi.xbox360.getRawAxis(4) < 0)
         {
-//            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) - 0.25;
-            rotationpower = ((MAX_MOTOR_OUTPUT-MIN_MOTOR_OUTPUT) * Robot.oi.xbox360.getRawAxis(1)) - MIN_MOTOR_OUTPUT;
+            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) - 0.25;
         }
         else if (Robot.oi.xbox360.getRawAxis(4) > 0)
         {
-//            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) + 0.25;
-            rotationpower = ((MAX_MOTOR_OUTPUT-MIN_MOTOR_OUTPUT) * Robot.oi.xbox360.getRawAxis(1)) + MIN_MOTOR_OUTPUT;
+            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) + 0.25;
         }
-
-//        forwardPowerValue = (forwardPowerValue * 0.5);
-        
-//        SmartDashboard.putNumber("JoyStick Y-Axis", Robot.oi.xbox360.getRawAxis(1));
-//        SmartDashboard.putNumber("forwardPowerValue", forwardPowerValue);
-//        SmartDashboard.putNumber("Joystick X-Axis", Robot.oi.xbox360.getRawAxis(4));
-//        SmartDashboard.putNumber("rotatePowerValue", rotationpower);
+        SmartDashboard.putNumber("JoyStick Y-Axis", Robot.oi.xbox360.getRawAxis(1));
+        SmartDashboard.putNumber("forwardPowerValue", forwardPowerValue);
+        SmartDashboard.putNumber("Joystick X-Axis", Robot.oi.xbox360.getRawAxis(4));
+        SmartDashboard.putNumber("rotatePowerValue", rotationpower);
 
        //Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)*.8,
                                //-Robot.oi.xbox360.getRawAxis(4)*.8);  
