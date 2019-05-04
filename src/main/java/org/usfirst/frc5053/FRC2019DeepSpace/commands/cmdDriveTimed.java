@@ -46,7 +46,7 @@ public class cmdDriveTimed extends TimedCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        Robot.driveTrain.arcade(-0.95, 0);
+        Robot.driveTrain.arcade(-0.5, 0);
     }
 
 
