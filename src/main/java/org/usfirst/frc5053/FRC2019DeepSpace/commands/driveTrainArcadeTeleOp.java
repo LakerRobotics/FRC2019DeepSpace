@@ -10,10 +10,12 @@
 
 
 package org.usfirst.frc5053.FRC2019DeepSpace.commands;
+import org.usfirst.frc5053.FRC2019DeepSpace.OI;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 
 import org.usfirst.frc5053.FRC2019DeepSpace.Robot;
 
@@ -56,32 +58,41 @@ public class driveTrainArcadeTeleOp extends Command {
         //          direction of the physical turn was reverse of our
         //          desired direction
         
+        // double max_forward_power = 1.00;
+        double max_forward_power = OI.MAX_DRIVE_POWER;
+        double min_forward_power = 0.25;
+        double deadband = 0.01;
+
+        double slope = max_forward_power - min_forward_power;
+
         double forwardPowerValue = 0;
-        if (Robot.oi.xbox360.getRawAxis(1) == 0)
+        if ((Robot.oi.xbox360.getRawAxis(1) <= deadband) && 
+            (Robot.oi.xbox360.getRawAxis(1) >= -deadband))
         {
             forwardPowerValue = 0;
         }
         else if (Robot.oi.xbox360.getRawAxis(1) < 0)
         {
-            forwardPowerValue = (0.75 * Robot.oi.xbox360.getRawAxis(1)) - 0.25;
+            forwardPowerValue = (slope * Robot.oi.xbox360.getRawAxis(1)) - min_forward_power;
         }
         else if (Robot.oi.xbox360.getRawAxis(1) > 0)
         {
-            forwardPowerValue = (0.75 * Robot.oi.xbox360.getRawAxis(1)) + 0.25;
+            forwardPowerValue = (slope * Robot.oi.xbox360.getRawAxis(1)) + min_forward_power;
         }
 
         double rotationpower = 0;
-        if (Robot.oi.xbox360.getRawAxis(4) == 0)
+        if ((Robot.oi.xbox360.getRawAxis(4) <= deadband) &&
+            (Robot.oi.xbox360.getRawAxis(4) >= -deadband))
         {
             rotationpower = 0;
         }
         else if (Robot.oi.xbox360.getRawAxis(4) < 0)
         {
-            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) - 0.25;
+            rotationpower = (slope * Robot.oi.xbox360.getRawAxis(4)) - min_forward_power;
         }
         else if (Robot.oi.xbox360.getRawAxis(4) > 0)
         {
-            rotationpower = (0.75 * Robot.oi.xbox360.getRawAxis(4)) + 0.25;
+            rotationpower = (slope * Robot.oi.xbox360.getRawAxis(4)) + min_forward_power;
         }
         SmartDashboard.putNumber("JoyStick Y-Axis", Robot.oi.xbox360.getRawAxis(1));
         SmartDashboard.putNumber("forwardPowerValue", forwardPowerValue);
@@ -91,9 +102,11 @@ public class driveTrainArcadeTeleOp extends Command {
        //Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)*.8,
                                //-Robot.oi.xbox360.getRawAxis(4)*.8);  
                                 Robot.driveTrain.arcade(forwardPowerValue,
+                                
                                 -rotationpower);               
         //Robot.driveTrain.arcade(Robot.oi.xbox360.getRawAxis(1)+0.15,
-        //                        -(Robot.oi.xbox360.getRawAxis(4)+0.15));               
+        //                        -(Robot.oi.xbox360.getRawAxis(4)+0.15));             
+    
     }
 
     // Make this return true when this Command no longer needs to run execute()

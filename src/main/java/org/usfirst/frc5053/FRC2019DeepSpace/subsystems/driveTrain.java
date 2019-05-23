@@ -91,7 +91,7 @@ public class driveTrain extends Subsystem {
 
     // 20190208 Move this method from above into the place indicated by the auto-generated comments.
     public void arcade(double moveValue,double rotateValue){
-        robotDrive2.arcadeDrive(moveValue, rotateValue);
+        robotDrive2.arcadeDrive(moveValue, rotateValue, false);             // DO NOT SQUARE INPUTS
         
     }
 

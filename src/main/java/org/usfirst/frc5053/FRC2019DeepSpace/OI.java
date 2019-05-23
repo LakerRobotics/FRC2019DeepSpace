@@ -106,6 +106,10 @@ public class OI {
     public static int SELECTED_GAME_PIECE = GAME_PIECE_HATCH;
     public static int SELECTED_DELIVERY_POSITION = CARGO_SHIP; 
 
+    // Constants for robot speed
+    // public static double MAX_DRIVE_POWER = 1.0;
+    public static double MAX_DRIVE_POWER = 0.35;
+
     /**********************************
      * {shoulder, wrist, right distance, left distance}
      * NOTE that HATCH Rocket Low = HATCH Feeder = HATCH Cargo Ship

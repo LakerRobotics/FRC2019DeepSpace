@@ -186,7 +186,7 @@ public class shoulderLift extends Subsystem {
        shoulderTalonSRX.configReverseSoftLimitThreshold(kSoftLimitReverse);
 
        // enables current limits on the motor
-       shoulderTalonSRX.enableCurrentLimit(true);
+       shoulderTalonSRX.enableCurrentLimit(kEnableCurrentLimit);
        shoulderTalonSRX.configPeakCurrentLimit(kPeakCurrentLimit);
        shoulderTalonSRX.configPeakCurrentDuration(kPeakCurrentDuration);
        // System.out.println("shoulderLift.configureShoulder END");

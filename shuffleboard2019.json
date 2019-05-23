@@ -782,12 +782,211 @@
           }
         }
       }
+    },
+    {
+      "title": "Tab 5",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "4,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/driveTrain",
+              "_title": "LiveWindow/driveTrain",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/driveTrain/speedControllerLeft",
+                  "_title": "speedControllerLeft",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/driveTrain/speedControllerRight",
+                  "_title": "speedControllerRight",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          },
+          "6,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveRight_Forward",
+              "_title": "/SmartDashboard/driveRight_Forward"
+            }
+          },
+          "7,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveLeft_Forward: slow_Speed",
+              "_title": "/SmartDashboard/driveLeft_Forward: slow_Speed"
+            }
+          },
+          "7,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveLeft_Forward: medium_Speed",
+              "_title": "/SmartDashboard/driveLeft_Forward: medium_Speed"
+            }
+          },
+          "7,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveLeft_Forward: max_Speed",
+              "_title": "/SmartDashboard/driveLeft_Forward: max_Speed"
+            }
+          },
+          "8,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveArcade: slow",
+              "_title": "/SmartDashboard/driveArcade: slow"
+            }
+          },
+          "8,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveArcade: medium",
+              "_title": "/SmartDashboard/driveArcade: medium"
+            }
+          },
+          "8,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Command",
+              "_source0": "network_table:///SmartDashboard/driveArcade: max",
+              "_title": "/SmartDashboard/driveArcade: max"
+            }
+          },
+          "5,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/JoyStick Y-Axis",
+              "_title": "SmartDashboard/JoyStick Y-Axis"
+            }
+          },
+          "4,4": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Joystick X-Axis",
+              "_title": "SmartDashboard/Joystick X-Axis"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Tab 6",
+      "autoPopulate": false,
+      "autoPopulatePrefix": "",
+      "widgetPane": {
+        "gridSize": 128.0,
+        "showGrid": true,
+        "hgap": 16.0,
+        "vgap": 16.0,
+        "tiles": {
+          "3,1": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/driveTrain",
+              "_title": "LiveWindow/driveTrain",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/driveTrain/leftTalon",
+                  "_title": "leftTalon",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/driveTrain/rightTalon",
+                  "_title": "rightTalon",
+                  "Visuals/Orientation": "HORIZONTAL"
+                }
+              ]
+            }
+          },
+          "5,1": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/JoyStick Y-Axis",
+              "_title": "SmartDashboard/JoyStick Y-Axis"
+            }
+          },
+          "5,2": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Text View",
+              "_source0": "network_table:///SmartDashboard/Joystick X-Axis",
+              "_title": "SmartDashboard/Joystick X-Axis"
+            }
+          }
+        }
+      }
     }
   ],
   "windowGeometry": {
-    "x": -30.0,
-    "y": 56.0,
-    "width": 1293.3333740234375,
-    "height": 733.3333129882812
+    "x": -8.0,
+    "y": -8.0,
+    "width": 1936.0,
+    "height": 1056.0
   }
 }
