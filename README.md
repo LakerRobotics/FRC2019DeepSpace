@@ -4,7 +4,13 @@ Team 5053 starts the 2019 FRC season with no experienced programmers.  We will b
 
 ## IMPORTANT DEVELOPMENT NOTES
 If you use robot builder and export java, you must modify the following files
-    
+    clawOpenAndEjectCargo.java
+    closeClawAndStopIntake.java
+    cmdGroundPickupGroup.java
+    cmdHatchHumanPlayer.java
+    cmdRocketHigh.java
+    operateArm.java
+    OI.java 
 
 
 ## Development
