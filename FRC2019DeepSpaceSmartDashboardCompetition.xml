@@ -31,7 +31,6 @@
 </dashboard>
 <live-window>
 </live-window>
-	<hidden field="shoulderSynced"/>
 	<hidden field="driveSpeed: fast"/>
 	<hidden field="driveSpeed: slow"/>
 	<hidden field="Encoder Position"/>

@@ -57,8 +57,8 @@ public class driveTrainArcadeTeleOp extends Command {
         // 20190205 Modified the rotate stick to feed a negative value -- the
         //          direction of the physical turn was reverse of our
         //          desired direction
-        
         SmartDashboard.putNumber("x", Robot.oi.xbox360.getRawAxis(1));
+        SmartDashboard.putNumber("y", Robot.oi.xbox360.getRawAxis(4));
         // double max_forward_power = 1.00;
         double max_forward_power = OI.MAX_DRIVE_POWER;
         double min_forward_power = 0.25;

@@ -267,7 +267,6 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/shoulderCurrent",
                   "_title": "SmartDashboard/shoulderCurrent",
-                  "Visible data/SmartDashboard/shoulderCurrent": true
                   "Graph/Visible time": 30.0
                 },
                 "1,1": {
