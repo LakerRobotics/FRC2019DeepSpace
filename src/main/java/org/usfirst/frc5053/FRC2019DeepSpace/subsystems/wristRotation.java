@@ -43,7 +43,7 @@ public class wristRotation extends Subsystem {
     boolean kMotorInvert = false;
     final double kP = 2.0;
 	final double kI = 0.0;
-	final double kD = 0.0;
+	final double kD = 0.1;
 	final double kF = 0.0;
 	final int kIzone = 0;
     final double kPeakOutput = 1.0;

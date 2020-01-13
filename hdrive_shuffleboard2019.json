@@ -267,7 +267,6 @@
                   "_type": "Graph",
                   "_source0": "network_table:///SmartDashboard/shoulderCurrent",
                   "_title": "SmartDashboard/shoulderCurrent",
-                  "Visible data/SmartDashboard/shoulderCurrent": true
                   "Graph/Visible time": 30.0
                 },
                 "1,1": {
@@ -1036,14 +1035,120 @@
         "showGrid": true,
         "hgap": 16.0,
         "vgap": 16.0,
-        "tiles": {}
+        "tiles": {
+          "3,0": {
+            "size": [
+              1,
+              1
+            ],
+            "content": {
+              "_type": "Boolean Box",
+              "_source0": "network_table:///CameraPublisher/USB Camera 0/connected",
+              "_title": "CameraPublisher/USB Camera 0/connected",
+              "Colors/Color when true": "#7CFC00FF",
+              "Colors/Color when false": "#8B0000FF"
+            }
+          },
+          "4,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_source0": "network_table:///LiveWindow/CANSparkMAX1",
+              "_title": "LiveWindow/CANSparkMAX1",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Encoder",
+                  "_source0": "network_table:///LiveWindow/CANSparkMAX1/encoderRightSide",
+                  "_title": "encoderRightSide"
+                },
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/CANSparkMAX1/sparkRightSide",
+                  "_title": "sparkRightSide",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Speed Controller",
+                  "_source0": "network_table:///LiveWindow/CANSparkMAX1/sparkLeftSide",
+                  "_title": "sparkLeftSide",
+                  "Visuals/Orientation": "HORIZONTAL"
+                },
+                {
+                  "_type": "Encoder",
+                  "_source0": "network_table:///LiveWindow/CANSparkMAX1/encoderLeftSide",
+                  "_title": "encoderLeftSide"
+                }
+              ]
+            }
+          },
+          "6,0": {
+            "size": [
+              2,
+              4
+            ],
+            "content": {
+              "_type": "Subsystem Layout",
+              "_title": "H-Drive (NEO)",
+              "Layout/Label position": "BOTTOM",
+              "_children": [
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/Encoder Position",
+                  "_title": "SmartDashboard/Encoder Position"
+                },
+                {
+                  "_type": "Text View",
+                  "_source0": "network_table:///SmartDashboard/Encoder Velocity",
+                  "_title": "SmartDashboard/Encoder Velocity"
+                },
+                {
+                  "_type": "Simple Dial",
+                  "_source0": "network_table:///SmartDashboard/Motor Temperature",
+                  "_title": "SmartDashboard/Motor Temperature",
+                  "Range/Min": 0.0,
+                  "Range/Max": 100.0,
+                  "Visuals/Show value": true
+                },
+                {
+                  "_type": "Graph",
+                  "_source0": "network_table:///SmartDashboard/Motor Current (amps)",
+                  "_title": "SmartDashboard/Motor Current (amps)",
+                  "Graph/Visible time": 30.0
+                }
+              ]
+            }
+          },
+          "8,0": {
+            "size": [
+              4,
+              4
+            ],
+            "content": {
+              "_type": "Camera Stream",
+              "_source0": "camera_server://USB Camera 0",
+              "_title": "USB Camera 0",
+              "Crosshair/Show crosshair": true,
+              "Crosshair/Crosshair color": "#FFFFFFFF",
+              "Controls/Show controls": true,
+              "Controls/Rotation": "NONE",
+              "compression": -1.0,
+              "fps": -1,
+              "imageWidth": -1,
+              "imageHeight": -1
+            }
+          }
+        }
       }
     }
   ],
   "windowGeometry": {
-    "x": -6.0,
-    "y": 1.0,
-    "width": 1936.0,
-    "height": 854.0
+    "x": 625.0,
+    "y": 5.0,
+    "width": 1104.0,
+    "height": 1054.0
   }
 }

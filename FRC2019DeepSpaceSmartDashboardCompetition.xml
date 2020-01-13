@@ -32,36 +32,14 @@
 <live-window>
 </live-window>
 	<hidden field="shoulderSynced"/>
-	<hidden field="CARGO : Ground Pickup"/>
-	<hidden field="intakeLiftDownTimed: default"/>
-	<hidden field="armHeightEnum"/>
-	<hidden field="HATCH : Rocket High"/>
-	<hidden field="HATCH : Rocket Middle"/>
-	<hidden field="climbLower"/>
-	<hidden field="wristSensorAbs: "/>
-	<hidden field="climbLift"/>
-	<hidden field="CARGO : Rocket High Rear"/>
-	<hidden field="HATCH : Human Player"/>
-	<hidden field="clawOperationTimedClose"/>
-	<hidden field="intakeLiftUpTimed: default"/>
-	<hidden field="wristCurrent"/>
-	<hidden field="wristSynced"/>
-	<hidden field="CARGO : Cargo Ship"/>
-	<hidden field="CARGO : Rocket High"/>
-	<hidden field="HATCH : Cargo Ship"/>
-	<hidden field="CARGO : Rocket Low"/>
-	<hidden field="DEBUG1"/>
-	<hidden field="DEBUG"/>
-	<hidden field="wristSensorPos: "/>
-	<hidden field="intakeIn"/>
-	<hidden field="shoulderCurrent"/>
-	<hidden field="HATCH : Rocket Low"/>
-	<hidden field="ShoulderSensorPos: "/>
-	<hidden field="CARGO : Rocket Middle"/>
-	<hidden field="intakeOut"/>
-	<hidden field="labViewInterface"/>
-	<hidden field="ShoulderSensorAbs: "/>
-	<hidden field="clawOpenAndEjectCargo"/>
-	<hidden field="CARGO : Human Player"/>
-	<hidden field="HATCH : Transport"/>
+	<hidden field="driveSpeed: fast"/>
+	<hidden field="driveSpeed: slow"/>
+	<hidden field="Encoder Position"/>
+	<hidden field="driveSpeed: middle"/>
+	<hidden field="driveJoystick"/>
+	<hidden field="Motor Temperature"/>
+	<hidden field="CANSparkMAX1"/>
+	<hidden field="Motor Current (amps)"/>
+	<hidden field="Encoder Velocity"/>
+	<hidden field="Autonomous Command"/>
 </xml>

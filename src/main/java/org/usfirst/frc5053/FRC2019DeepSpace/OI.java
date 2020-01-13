@@ -13,6 +13,7 @@ package org.usfirst.frc5053.FRC2019DeepSpace;
 
 import org.usfirst.frc5053.FRC2019DeepSpace.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+//import sun.nio.cs.KOI8_U;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -107,8 +108,8 @@ public class OI {
     public static int SELECTED_DELIVERY_POSITION = CARGO_SHIP; 
 
     // Constants for robot speed
-    // public static double MAX_DRIVE_POWER = 1.0;
-    public static double MAX_DRIVE_POWER = 0.35;
+    public static double MAX_DRIVE_POWER = 1.0;
+    
 
     /**********************************
      * {shoulder, wrist, right distance, left distance}
@@ -118,7 +119,7 @@ public class OI {
     {
         {   0,    0,  0.0,  0.0},       // 0: Not Used
         {2931,  500,  0.0,  0.0},       // 11: Hatch ==> Transport Position
-        {2509, 1624, 18.5, 18.5},       // 9: Hatch ==> Feeder (Human Player)
+        {2509, 1663, 18.5, 18.5},       // 9: Hatch ==> Feeder (Human Player)
         {2509, 1532, 18.5, 18.5},       // 7: Hatch ==> Cargo Ship
         {2509, 1532, 18.5, 18.5},       // 6: Hatch ==> Rocket Low
         {1650, 2142, 29.0, 29.0},       // 5: Hatch ==> Rocket Middle
